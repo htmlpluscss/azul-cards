@@ -1,0 +1,41 @@
+			<div class="page-bar__nav h6">
+
+				<ul>
+
+{% for item in [
+{
+	name : "Где купить",
+	hash : "where-buy"
+},
+{
+	name : "Как купить",
+	hash : "how-buy"
+},
+{
+	name : "Клуб",
+	hash : "club"
+},
+{
+	name : "Доставка",
+	hash : "delivery"
+},
+{
+	name : "Оплата",
+	hash : "payment"
+}
+
+] %}
+
+					<li>
+
+						<a href="#{{ item.hash }}" class="page-bar__accordion-link{% if loop.first %} is-current{% endif %}">
+							{{ item.name }}
+						</a>
+
+					</li>
+
+{% endfor %}
+
+				</ul>
+
+			</div>

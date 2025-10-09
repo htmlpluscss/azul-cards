@@ -1,0 +1,221 @@
+.form-to-work {
+
+	background-color: #eee;
+	padding: 64px 0;
+	position: relative;
+	z-index: 1;
+
+	@media $smWidth {
+
+		padding: 40px 0;
+
+	}
+
+	&--short {
+
+		padding: var(--padding) 0;
+
+	}
+
+	&__bg {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+
+	}
+
+	&__grid {
+
+		display: grid;
+		gap: 80px;
+		align-items: center;
+		grid-template-columns: 1fr 496px;
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr;
+			gap: 40px;
+			display: flex;
+			flex-direction: column;
+
+		}
+
+	}
+
+	&__content {
+
+		display: grid;
+		gap: 40px;
+
+		ul {
+
+			@media $lgWidth {
+
+				gap: 24px;
+
+			}
+
+			@media $desktop {
+
+				display: grid;
+				grid-auto-flow: column;
+				grid-auto-columns: 1fr;
+
+			}
+
+			@media $smWidth {
+
+				gap: 24px;
+				display: grid;
+
+			}
+
+			li {
+
+				padding: 24px;
+				font-size: 14px;
+
+				@media $lgWidth {
+
+					padding: 0;
+
+				}
+
+			}
+
+			svg {
+
+				color: var(--main);
+				margin-bottom: 16px;
+
+			}
+
+			p {
+
+				margin-top: 8px;
+
+			}
+
+		}
+
+	}
+
+	&__header {
+
+		display: grid;
+		gap: 16px;
+		font-size: 18px;
+
+		@media $smWidth {
+
+			font-size: 16px;
+
+		}
+
+	}
+
+	&__form {
+
+		padding: var(--padding);
+		gap: var(--gap);
+		background-color: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(10px);
+		border-radius: 16px;
+		display: flex;
+		flex-direction: column;
+
+		@media $mdWidth {
+
+			width: 100%;
+
+		}
+
+		@media $smWidth {
+
+			padding: 16px;
+
+			.btn {
+
+				width: 100%;
+
+			}
+
+		}
+
+	}
+
+}
+
+.form-to-work-column {
+
+	margin-top: 128px;
+	position: relative;
+	background-color: #eaeaea;
+	padding: 80px 0;
+
+	@media $smWidth {
+
+		margin-top: 40px;
+
+	}
+
+	&__bg {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+
+	}
+
+	&__header {
+
+		display: grid;
+		font-size: 18px;
+		gap: 16px;
+		margin-bottom: 80px;
+
+		@media $smWidth {
+
+			font-size: 16px;
+			margin-bottom: 40px;
+
+		}
+
+	}
+
+	&__form {
+
+		display: grid;
+		gap: 16px;
+
+	}
+
+	&__fieldset {
+
+		display: grid;
+		gap: var(--gap);
+		align-items: flex-end;
+		grid-template-columns: 240px 240px 240px 240px 1fr;
+
+		@media $lgWidth {
+
+			grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+
+			.btn {
+
+				width: 100%;
+
+			}
+
+		}
+
+	}
+
+}

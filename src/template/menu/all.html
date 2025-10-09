@@ -1,0 +1,51 @@
+	<div class="menu-catalog__sub">
+
+		<ul class="menu-catalog__level-2">
+
+{% for level2 in ["Бренды","Волосы","Лицо","Уши","Глаза","Шея"] %}
+
+			<li class="menu-catalog__item">
+
+				<a itemprop="url" class="menu-catalog__link" href="/catalog/level2/">
+
+					<span itemprop="name" class="menu-catalog__name">
+
+						{{ level2 }}
+
+					</span>
+
+				</a>
+
+				<div class="menu-catalog__sub">
+
+					<ul class="menu-catalog__level-3">
+
+				{% for level3 in ["Все бренды (16)","Бренд №1","Бренд №2","Бренд №3","Бренд №4","Бренд №5"] %}
+
+						<li class="menu-catalog__item">
+
+							<a itemprop="url" class="menu-catalog__link" href="/catalog/">
+
+								<span itemprop="name" class="menu-catalog__name">
+
+									{{ level3 }}
+
+								</span>
+
+							</a>
+
+						</li>
+
+				{% endfor %}
+
+					</ul>
+
+				</div>
+
+			</li>
+
+{% endfor %}
+
+		</ul>
+
+	</div>

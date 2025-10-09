@@ -1,0 +1,85 @@
+		<div class="header__main">
+
+			<div class="center">
+
+				<div class="header__main-inner">
+
+					<div class="header__logo">
+
+						<a href="/" title="Главная страница {{ site }}">
+
+							<img src="/img/logo.svg" width="106" height="48" loading="eager" alt="Компания {{ site }}">
+
+						</a>
+
+					</div>
+
+					<div class="header__search">
+
+{% include "template/header/search.html" %}
+
+					</div>
+
+					<button class="header__cart button" type="button" data-modal="cart" aria-label="Ваша корзина">
+
+						<svg width="32" height="32">
+							<use xlink:href="#svg-cart"/>
+						</svg>
+
+					</button>
+
+					<div class="header__main-right">
+
+						<div class="header-action">
+
+							<div class="header-action__contacts">
+
+{% include "template/header/phone.html" %}
+
+{% include "template/header/messenger.html" %}
+
+							</div>
+
+							<div class="header-action__btns">
+
+								<button class="btn btn--dark" type="button" data-modal="callback">
+									Стать партнером
+								</button>
+{% if lk %}
+								<a class="btn btn--outline" href="/lk">
+									Личный кабинет
+									<svg width="24" height="24">
+										<use xlink:href="#svg-user-right"/>
+									</svg>
+								</a>
+{% else %}
+								<button class="btn btn--outline" type="button" data-modal="login">
+									Вход в кабинет
+									<svg width="24" height="24">
+										<use xlink:href="#svg-user-right"/>
+									</svg>
+								</button>
+{% endif %}
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="header__btn-menu">
+
+						<button class="button btn-menu-toggle" type="button" aria-label="Меню сайта">
+							<svg width="32" height="32">
+								<use xlink:href="#svg-menu-burger"/>
+								<use xlink:href="#svg-close"/>
+							</svg>
+						</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>

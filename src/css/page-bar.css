@@ -1,0 +1,70 @@
+.page-bar {
+
+	display: grid;
+	grid-template-columns: 366px 1fr;
+	padding: var(--padding) 0;
+	gap: var(--gap);
+
+	@media $mdWidth {
+
+		padding: 24px 0;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&__nav {
+
+		padding-right: 16px;
+		color: var(--gray);
+
+		@media $lgWidth {
+
+			padding: 0;
+
+		}
+
+		a {
+
+			display: block;
+			padding: 16px 24px;
+
+		}
+
+		.is-current {
+
+			border-right: 3px solid;
+			color: var(--main);
+
+		}
+
+	}
+
+	&__body {
+
+		display: grid;
+		align-content: flex-start;
+		gap: var(--padding);
+
+		@media $mdWidth {
+
+			display: flex;
+			flex-direction: column;
+
+		}
+
+	}
+
+	&__accordion {
+
+		&-item {
+
+			scroll-margin: var(--scrollMargin);
+			display: grid;
+			gap: 8px;
+
+		}
+
+	}
+
+}

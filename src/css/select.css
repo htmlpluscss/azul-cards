@@ -1,0 +1,199 @@
+.select {
+
+	display: block;
+	position: relative;
+	user-select: none;
+
+	&.is-disabled {
+
+		pointer-events: none;
+
+	}
+
+	&.is-open {
+
+		z-index: 6;
+		transition: none;
+
+	}
+
+	&.is-open &__value {
+
+		border-color: var(--color);
+
+		&-arrow {
+
+			transform: scaleY(-1);
+
+		}
+
+	}
+
+	&.is-open &__list {
+
+		opacity: 1;
+		pointer-events: auto;
+
+	}
+
+	&__value {
+
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: 100%;
+		padding: 15px 8px 15px 15px;
+		border-radius: var(--radius);
+		min-width: 240px;
+		z-index: 1;
+		border: 1px solid var(--border);
+		background-color: #fff;
+
+		svg {
+
+			pointer-events: none;
+
+		}
+
+		&-inner {
+
+			white-space: nowrap;
+			display: block;
+			max-width: 100%;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			flex-grow: 1;
+			text-align: left;
+
+		}
+
+	}
+
+	&__list {
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		border-radius: 0;
+		background-color: #fff;
+		opacity: 0;
+		pointer-events: none;
+		transform: translate3d(0, 8px, 0);
+		min-width: 100%;
+		max-height: 280px;
+		box-shadow: var(--box-shadow);
+
+		&-item {
+
+			transition: var(--transitionDefault);
+			width: 100%;
+			text-align: left;
+			cursor: pointer;
+			position: relative;
+
+			padding: 8px 16px;
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+			min-height: 56px;
+
+			span {
+
+				display: block;
+
+			}
+
+			input {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				appearance: none;
+				opacity: 0.001;
+
+			}
+
+			input:checked + span {
+
+				color: var(--accent);
+
+			}
+
+			@media $desktop {
+
+				&:hover {
+
+					color: var(--main);
+					background-color: var(--substrate);
+
+				}
+
+			}
+
+		}
+
+	}
+
+	select {
+
+		border: 0;
+		height: 56px;
+		border-radius: 0;
+		appearance: none;
+		display: block;
+		font-size: 16px;
+		padding-left: 48px;
+		background-color: #fff;
+		border-radius: var(--radius);
+		border: 1px solid var(--border);
+		width: 100%;
+
+	}
+
+	/* filter */
+
+	&__filter {
+
+		display: none;
+
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		z-index: 1;
+		padding: 8px 16px;
+		height: 40px;
+		border: 0 !important;
+		pointer-events: none;
+
+		&::placeholder {
+
+			font-size: 14px;
+
+		}
+
+	}
+
+	&.is-open &__filter {
+
+		opacity: 1;
+		pointer-events: auto;
+
+	}
+
+	&__filter-empty {
+
+		display: none;
+		margin: 16px;
+		color: var(--text);
+
+	}
+
+	&--filter-empty &__filter-empty {
+
+		display: block;
+
+	}
+
+}

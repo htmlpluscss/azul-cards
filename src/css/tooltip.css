@@ -1,0 +1,53 @@
+.tooltip {
+
+	position: relative;
+
+	summary {
+
+		position: relative;
+		list-style: none;
+		user-select: none;
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+
+		&::-webkit-details-marker {
+
+			display: none;
+
+		}
+
+		&::marker {
+
+			display: none;
+
+		}
+
+		&:focus {
+
+			outline: none;
+
+		}
+
+	}
+
+	&__inner {
+
+		width: 240px;
+		padding: 8px;
+		background-color: #eee;
+		border-radius: var(--radius);
+		position: absolute;
+		left: -50%;
+		margin-bottom: 6px;
+		bottom: 100%;
+		z-index: 5;
+		box-shadow: var(--box-shadow);
+		font-size: 12px;
+		line-height: 1.2;
+		border: 1px solid #E5E5E5;
+		font-weight: 400;
+		color: var(--color);
+
+	}
+
+}

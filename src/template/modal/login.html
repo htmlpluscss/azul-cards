@@ -1,0 +1,23 @@
+			<form action="/" class="modal__item modal__item--login modal-form is-autofocus">
+
+				<p class="h5 color-main">
+					Войти или зарегистрироваться
+				</p>
+
+{% set inputbox = {
+	label : 'По номеру телефона'
+} %}
+
+{% include "_include/form/phone.html" %}
+
+				<button class="btn btn--dark">
+					Получить код в СМС
+				</button>
+
+{% include "_include/form/checkbox-rule.html" %}
+
+				<p class="modal-form__text-after-rule">
+					Если вы не можете зарегистрировать или получить доступ к своей учетной записи, свяжитесь по <a href="/" class="link" target="_blank" rel="noopener nofollow">whatsapp</a> или <a href="/" class="link" target="_blank" rel="noopener nofollow">telegram</a>
+				</p>
+
+			</form>

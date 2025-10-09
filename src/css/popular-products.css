@@ -1,0 +1,92 @@
+.popular-products {
+
+	&__header {
+
+		display: grid;
+		gap: 128px;
+		align-items: flex-end;
+		grid-template-columns: 1fr auto;
+		margin-bottom: 80px;
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr;
+			margin-bottom: 40px;
+			gap: 24px;
+
+		}
+
+		&-main {
+
+			font-size: 18px;
+			display: grid;
+			gap: 8px;
+
+			@media $smWidth {
+
+				font-size: 16px;
+
+			}
+
+		}
+
+		&-second {
+
+			@media $tablet {
+
+				display: flex;
+
+			}
+
+		}
+
+	}
+
+}
+
+.products-list {
+
+	display: grid;
+	gap: var(--gap);
+
+	&__filter {
+
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+
+		@media $smWidth {
+
+			display: none;
+
+		}
+
+	}
+
+	&__grid {
+
+		display: grid;
+		gap: var(--gap);
+		grid-template-columns: repeat(4, 1fr);
+
+		@media $lgWidth {
+
+			grid-template-columns: repeat(3, 1fr);
+
+		}
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
+	}
+
+}

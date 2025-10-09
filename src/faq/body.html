@@ -1,0 +1,41 @@
+{% for hash in ["where-buy","how-buy","club","delivery","payment"] %}
+
+				<div class="page-bar__accordion-item{% if loop.index > 1 %} hide{% endif %}" id="{{ hash }}">
+
+{% for head in ["Оплата заказов","Оплата наличными при самовывозе","Оплата по безналу","Оплата СБП"] %}
+
+					<div class="accordion" itemscope itemtype="https://schema.org/QAPage">
+
+						<div class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+							<meta itemprop="answerCount" content="1">
+
+							<div class="accordion__head accordion__btn">
+
+								<h3 class="h5" itemprop="name">
+									{{ head }}
+								</h3>
+
+							</div>
+
+							<div class="accordion__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+
+								<div class="accordion__body-inner" itemprop="text">
+
+									<p>
+										Обладатели карт Мир, Visa или MasterCard могут  полностью оплатить заказ в момент его оформления. Данный вариант оплаты  позволит сэкономить время при получении посылки. При встрече с курьером, менеджерами пункта самовывоза или почтового отделения вам нужно будет  просто забрать заказ, предварительно предоставив документ,  подтверждающий личность получателя
+									</p>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+{% endfor %}
+
+				</div>
+
+{% endfor %}

@@ -1,0 +1,35 @@
+{% set title = "FAQ" %}
+
+{% set description = "Ответы на часто задаваемые вопросы" %}
+
+{% set breadcrumbs = ["Нашим клиентам","Ответы на вопросы"] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<article class="center">
+
+		<h1 class="h3 h6-sm mb-gap">
+			Ответы на часто задаваемые вопросы
+		</h1>
+
+		<div class="page-bar">
+
+{% include "faq/menu.html" %}
+
+			<div class="page-bar__body">
+
+{% include "faq/body.html" %}
+
+			</div>
+
+		</div>
+
+	</article>
+
+{% set formWorkTitle = "Откройте мир премиального ухода с Greymy" %}
+
+{% include "main/form-to-work.html" %}
+
+{% endblock %}

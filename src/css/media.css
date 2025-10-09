@@ -1,0 +1,124 @@
+.visible-md,
+.visible-sm {
+
+	display: none;
+
+}
+
+.center {
+
+	width: 1600px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 var(--indent);
+
+}
+
+@media $desktop {
+
+	.hidden-desktop {
+
+		display: none !important;
+
+	}
+
+}
+
+@media $lgWidth {
+
+	:root {
+
+		--indent: 30px;
+
+	}
+
+
+}
+
+@media (max-width: 1535px) {
+
+	:root {
+
+		--indent: 24px;
+
+	}
+
+
+}
+
+@media $tablet {
+
+}
+
+@media $mdWidth {
+
+	:root {
+
+		--indent: 16px;
+		--gap: 16px;
+		--space: 72px;
+
+	}
+
+	.hidden-md {
+
+		display: none !important;
+
+	}
+
+	.visible-md {
+
+		display: block;
+
+	}
+
+	.center {
+
+		width: 768px;
+
+	}
+
+}
+
+@media $smWidth {
+
+	.hidden-sm {
+
+		display: none !important;
+
+	}
+
+	.visible-sm {
+
+		display: block;
+
+	}
+
+	.center {
+
+		width: 460px;
+
+	}
+
+}
+
+@media $xsWidth {
+
+	.hidden-xs {
+
+		display: none !important;
+
+	}
+
+}
+
+@media (max-width: 359px) {
+
+	:root {
+
+		--indent: 10px;
+
+	}
+
+}

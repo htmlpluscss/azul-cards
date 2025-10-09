@@ -1,0 +1,664 @@
+{% set title = site %}
+
+{% set cart = true %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<div class="center">
+
+<script>
+
+setTimeout( ()=> {
+
+	const eventModalShow = new CustomEvent("modalShow", {
+		detail: {
+			selector: "club"
+		}
+	});
+
+	window.modal.dispatchEvent(eventModalShow);
+
+})
+
+</script>
+
+	<h1>
+		Страницы
+	</h1>
+
+	<ul class="h4">
+		<li><a href="/main/">Главная</a></li>
+		<li><a href="/about/">О компании</a></li>
+		<li><a href="/brands/">Наши бренды</a></li>
+		<li><a href="/brands/item/">Бренд</a></li>
+		<li><a href="/workshop/">Учебный центр</a></li>
+		<li><a href="/workshop/item/">Программа обучения</a></li>
+		<li><a href="/contacts/">Контакты</a></li>
+		<li><a href="/catalog/">Каталог</a></li>
+		<li><a href="/catalog/brand/">Каталог - Бренд</a></li>
+		<li><a href="/catalog/loading/">Каталог - loading</a></li>
+		<li><a href="/product/">Карточка товара</a></li>
+		<li><a href="/product/gallery/">Карточка товара (когда одно фото)</a></li>
+		<li><a href="/order/">Оформление заказа - Личные данные</a></li>
+		<li><a href="/order/2">Оформление заказа - Доставка</a></li>
+		<li><a href="/order/3">Оформление заказа - Оплата</a></li>
+		<li><a href="/sales/">Акции</a></li>
+		<li><a href="/blog/">Beauty-блог</a></li>
+		<li><a href="/blog/article/">Бьюти блог статья</a></li>
+		<li><a href="/404/">404</a></li>
+		<li><a href="/faq/">FAQ</a></li>
+		<li><a href="/search/?search=Крокоди">Поиск</a></li>
+		<li><a href="/offline/">Если нет Интернета</a></li>
+	</ul>
+
+	<h2>
+		Личный кабинет
+	</h2>
+
+	<ul class="h4">
+		<li><a href="/lk/">Заказы</a></li>
+		<li><a href="/lk/profile/">Контактные данные</a></li>
+		<li><a href="/lk/address/">Мои адреса</a></li>
+		<li><a href="/lk/favourites/">Избранное</a></li>
+	</ul>
+
+	<h2>
+		Schema.org
+	</h2>
+
+	<ul class="h6">
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/">Organization, SiteNavigationElement</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/brands/">itemListElement (Наши бренды)</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/brands/item">Brand</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/workshop/">itemListElement (Учебный центр)</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/workshop/item">Course</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/contacts/">Organization (Контакты)</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/catalog/">OfferCatalog</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/product/">Product</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/sales/">itemListElement (Акции и скидки)</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/blog">Blog</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/blog/article">Article</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://validator.schema.org/#url=https://grandcosmetic.htmlpluscss.site/faq/">QAPage</a>
+		</li>
+	</ul>
+
+	<h2>
+		Lighthouse
+	</h2>
+
+	<ul class="h6">
+		<li><a target="_blank" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://grandcosmetic.htmlpluscss.site/main/&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&locale=ru&utm_source=lh-chrome-ext">Главная <b style="color: green">>90</b></a></li>
+		<li><a target="_blank" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://grandcosmetic.htmlpluscss.site/catalog/&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&locale=ru&utm_source=lh-chrome-ext">Каталог <b style="color: green">>90</b></a></li>
+		<li><a target="_blank" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://grandcosmetic.htmlpluscss.site/product/&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&locale=ru&utm_source=lh-chrome-ext">Карточка товара <b style="color: green">>90</b></a></li>
+	</ul>
+
+	<h2>
+		Open Graph
+	</h2>
+
+	<ul class="h6">
+		<li><a target="_blank" href="https://open-graph-viewer.vercel.app/open-graph/https%3A%2F%2Fgrandcosmetic.htmlpluscss.site%2Fproduct%2F">Карточка товара</a></li>
+		<li><a target="_blank" href="https://open-graph-viewer.vercel.app/open-graph/https%3A%2F%2Fgrandcosmetic.htmlpluscss.site%2Fblog%2Farticle%2F?">Бьюти блог статья</a></li>
+		<li><a target="_blank" href="https://open-graph-viewer.vercel.app/open-graph/https%3A%2F%2Fgrandcosmetic.htmlpluscss.site%2Fbrands%2Fitem%2F?">Бренд</a></li>
+		<li><a target="_blank" href="https://open-graph-viewer.vercel.app/open-graph/https%3A%2F%2Fgrandcosmetic.htmlpluscss.site%2Fsales%2F?">Акции</a></li>
+	</ul>
+
+	<h2>
+		Modal
+	</h2>
+
+	<div class="flex flex--wrap">
+
+		<div class="item w100p">
+
+			<p>
+				модальное окно можно вызвать и js:
+			</p>
+
+			<code>
+
+	const eventModalShow = new CustomEvent("modalShow", {
+		detail: {
+			selector: "login"
+		}
+	});
+
+	window.modal.dispatchEvent(eventModalShow);
+
+			</code>
+
+			<p>
+				где `login` модификатор модального окна
+			</p>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="city">
+				Новый город
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="callback">
+				Стать партнером
+			</button>
+
+		</div>
+
+	</div>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="login">
+				Войти или зарегистрироваться
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="login-telegram">
+				Войти Через Telegram
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="form-to-work">
+				Хотите с нами работать?
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="get-price-list">
+				Запросить прайс-лист
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="review">
+				Оставить отзыв
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="review-answer">
+				Ответить на отзыв
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" type="button" data-modal="club">
+				Анкета
+			</button>
+
+		</div>
+
+	</div>
+
+	<hr>
+
+	<h2>
+		Buttons
+	</h2>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<button class="btn btn--dark">
+				btn btn--dark
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--outline">
+				btn btn--outline
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark btn--h48">
+				btn btn--dark btn--h48
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark btn--h40">
+				btn btn--dark btn--h40
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--tab">
+				btn btn--tab
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--tag">
+				btn btn--tag
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--link">
+				btn--link
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--more">
+				btn btn--more
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--dark" disabled="disabled">
+				btn disabled
+			</button>
+
+		</div>
+
+		<div class="item">
+
+			<button class="btn btn--hash">
+				btn--hash
+			</button>
+
+		</div>
+
+	</div>
+
+	<h3>
+		Checkbox
+	</h3>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="checkbox" class="checkbox__input">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="checkbox" class="checkbox__input" checked="checked">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="checkbox" class="checkbox__input" disabled="disabled">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="checkbox" class="checkbox__input" disabled="disabled" checked="checked">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+	</div>
+
+	<h3>
+		Radio
+	</h3>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="radio" class="checkbox__input" name="radio">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="radio" class="checkbox__input" name="radio" checked="checked">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="radio" class="checkbox__input" disabled="disabled">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+		<div class="item">
+
+			<label class="checkbox">
+
+				<input type="radio" class="checkbox__input" disabled="disabled" checked="checked">
+
+				<span class="checkbox__label">
+					Выберите значение
+				</span>
+
+			</label>
+
+		</div>
+
+	</div>
+
+	<hr>
+
+	<h2>
+		Input
+	</h2>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<input class="input" placeholder="placeholder">
+
+		</div>
+
+		<div class="item">
+
+			<input class="input" value="value">
+
+		</div>
+
+		<div class="item">
+
+			<input class="input" value="disabled" disabled="disabled">
+
+		</div>
+
+	</div>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<div class="inputbox">
+
+				<label for="inputbox" class="inputbox__label">
+					* Индекс
+				</label>
+
+				<input id="inputbox" placeholder="Введите название" class="input" required="required">
+
+			</div>
+
+		</div>
+
+		<div class="item">
+
+			<div class="inputbox">
+
+				<label for="inputbox-2" class="inputbox__label">
+					* Индекс
+				</label>
+
+				<input id="inputbox-2" value="123" class="input" required="required">
+
+			</div>
+
+		</div>
+
+		<div class="item">
+
+			<label class="inputbox">
+
+				<span class="inputbox__label">
+					С иконкой
+				</span>
+
+				<span class="inputbox__icon">
+
+					<input placeholder="+7 (---) --- -- --" name="phone" class="input inputmask inputmask--phone" required="required" type="tel" inputmode="tel">
+
+					<svg width="24" height="24">
+						<use xlink:href="#svg-phone"/>
+					</svg>
+
+				</span>
+
+			</label>
+
+		</div>
+
+	</div>
+
+	<hr>
+
+	<h2>
+		Select
+	</h2>
+
+	<div class="flex flex--wrap">
+
+		<div class="item">
+
+			<div class="select">
+
+				<select name="select">
+
+					<option value="1">Все заказы</option>
+					<option value="2">Готов к выдаче</option>
+					<option value="3">Собирается</option>
+					<option value="4">Отправлен</option>
+					<option value="5">Получен заказчиком</option>
+					<option value="6">Ожидает согласования</option>
+
+				</select>
+
+			</div>
+
+		</div>
+
+		<div class="item">
+
+			<div class="select">
+
+				<select name="select2">
+
+					<option value="1">Все заказы</option>
+					<option value="2" selected="selected">Готов к выдаче</option>
+					<option value="3">Собирается</option>
+					<option value="4">Отправлен</option>
+					<option value="5">Получен заказчиком</option>
+					<option value="6">Ожидает согласования</option>
+
+				</select>
+
+			</div>
+
+		</div>
+
+		<div class="item">
+
+			<div class="select select--filter">
+
+				<select name="select-filter">
+					<option value="none">Выбрать</option>
+					<option value="1">ПАО Газпром нефть</option>
+					<option value="2">Газпром</option>
+					<option value="3">Газпром нефть - ЦР</option>
+					<option value="4">Газпром нефть - ПИ</option>
+					<option value="5">Газпром нефть - МА</option>
+					<option value="6">Газпром нефть - ЩЫ</option>
+					<option value="7">Газпром нефть - ЁЕ</option>
+				</select>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<style>
+
+	main hr {
+
+		margin: 20px 0;
+
+	}
+
+	main h1, main h2, main h3 {
+
+		margin: 20px 0 10px;
+
+	}
+
+	main .w100p {
+
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+
+	main .flex {
+
+		margin: 0 -10px;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	main p {
+
+		margin: 0 10px;
+
+	}
+
+	.item {
+
+		margin: 10px;
+
+	}
+
+	code {
+
+		margin: 10px;
+		background-color: #fff;
+		color: #000;
+		display: block;
+		border: 1px solid #efefef;
+		white-space: pre;
+		overflow-x: auto;
+
+	}
+
+</style>
+
+{% endblock %}

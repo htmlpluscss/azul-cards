@@ -1,0 +1,182 @@
+.training-professionals {
+
+	text-align: center;
+
+	&__header {
+
+		max-width: 1216px;
+		margin: auto;
+		display: grid;
+		gap: 16px;
+		font-size: 18px;
+		margin-bottom: 80px;
+
+		@media $smWidth {
+
+			margin-bottom: 40px;
+			font-size: 16px;
+
+		}
+
+	}
+
+	&__list {
+
+		display: grid;
+		gap: var(--gap);
+
+		@media $desktop {
+
+			grid-auto-flow: column;
+			grid-auto-columns: 1fr;
+
+		}
+
+		@media $tablet {
+
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
+	}
+
+	&__item {
+
+		padding: 24px;
+		font-size: 18px;
+
+		@media $smWidth {
+
+			font-size: 16px;
+
+		}
+
+		svg {
+
+			margin: 16px auto 32px;
+			stroke-width: 1px;
+			color: var(--main);
+
+		}
+
+		p {
+
+			margin-top: 8px;
+
+		}
+
+	}
+
+	&__gallery {
+
+		padding: var(--padding) 0;
+		display: grid;
+		gap: var(--gap);
+		grid-template-columns: repeat(12, 1fr);
+
+		@media $smWidth {
+
+			gap: 8px;
+			grid-template-columns: repeat(6, 1fr);
+
+		}
+
+		img {
+
+			border-radius: var(--radius);
+			max-width: 100%;
+			height: auto;
+
+		}
+
+	}
+
+	&__row {
+
+		display: grid;
+		gap: var(--padding);
+		grid-template-columns: 1fr 1fr;
+
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
+	}
+
+	&__column {
+
+		text-align: left;
+
+		@media $smWidth {
+
+			font-size: 14px;
+
+			.btn {
+
+				width: 100%;
+
+			}
+
+		}
+
+		p {
+
+			margin: 16px 0;
+
+		}
+
+		ul {
+
+			margin: 16px 0;
+
+			li {
+
+				margin: 8px 24px;
+
+				@media $smWidth {
+
+					margin: 8px 20px;
+
+					&::before {
+
+						top: 10px;
+						left: -12px;
+
+					}
+
+				}
+
+				&::before {
+
+					position: absolute;
+					width: 5px;
+					height: 5px;
+					top: 12px;
+					left: -14px;
+					content: '';
+					border-radius: 50%;
+					background-color: var(--color);
+
+				}
+
+			}
+
+		}
+
+		.flex {
+
+			margin-top: 40px;
+
+		}
+
+	}
+
+}

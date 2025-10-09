@@ -1,0 +1,72 @@
+.training-programs {
+
+	padding: var(--padding) 0;
+	background-color: #F6F5F1;
+
+	&__grid {
+
+		display: grid;
+		gap: 24px;
+		align-items: center;
+		grid-template-columns: 1fr 728px;
+
+		@media $lgWidth {
+
+			grid-template-columns: 1fr 496px;
+
+		}
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
+	}
+
+	&__body {
+
+		display: grid;
+		gap: 16px;
+		font-size: 18px;
+		align-content: flex-start;
+
+		@media $smWidth {
+
+			font-size: 16px;
+
+		}
+
+		.flex {
+
+			margin-top: 64px;
+
+			@media $smWidth {
+
+				margin-top: 8px;
+
+				.btn {
+
+					width: 100%;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__img {
+
+		img {
+
+			border-radius: 16px;
+			max-width: 100%;
+			height: auto;
+
+		}
+
+	}
+
+}

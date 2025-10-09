@@ -1,0 +1,59 @@
+.cookie {
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: var(--indent);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+
+	&__box {
+
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		padding: 12px 20px;
+		background-color: var(--substrate);
+		border: 1px solid #E5E5E5;
+		border-radius: var(--radius);
+		box-shadow: var(--box-shadow);
+
+		@media $smWidth {
+
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			gap: 10px;
+
+		}
+
+	}
+
+	&__text {
+
+		flex-grow: 1;
+		font-size: 14px;
+		line-height: 1.4;
+
+		a {
+
+			color: var(--blue);
+			white-space: nowrap;
+			text-decoration: underline;
+
+			@media $desktop {
+
+				&:hover {
+
+					text-decoration: none;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

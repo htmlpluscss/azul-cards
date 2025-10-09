@@ -1,0 +1,136 @@
+.flex {
+
+	display: flex;
+
+	&--content-between {
+
+		justify-content: space-between;
+
+	}
+
+	&--justify-center {
+
+		justify-content: center;
+
+	}
+
+	&--justify-end {
+
+		justify-content: flex-end;
+
+	}
+
+	&--align-end {
+
+		align-items: flex-end;
+
+	}
+
+	&--align-center {
+
+		align-items: center;
+
+	}
+
+	&--align-baseline {
+
+		align-items: baseline;
+
+	}
+
+	&--align-start {
+
+		align-items: flex-start;
+
+	}
+
+	&--wrap {
+
+		flex-wrap: wrap;
+
+	}
+
+	&--column {
+
+		flex-direction: column;
+
+	}
+
+	&--grow-1 {
+
+		flex-grow: 1;
+
+	}
+
+	&--gap-8 {
+
+		gap: 8px;
+
+	}
+
+	&--gap-16 {
+
+		gap: 16px;
+
+	}
+
+	&--gap {
+
+		gap: var(--gap);
+
+	}
+
+}
+
+.grid-column-span-2 {
+
+	grid-column: span 2;
+
+}
+
+.grid-column-span-3 {
+
+	grid-column: span 3;
+
+}
+
+.grid-column-span-4 {
+
+	grid-column: span 4;
+
+}
+
+.grid-column-span-6 {
+
+	grid-column: span 6;
+
+}
+
+
+.grid-row-span-2 {
+
+	grid-row: span 2;
+
+}
+
+@media $smWidth {
+
+	.grid-column-span-2--sm {
+
+		grid-column: span 2;
+
+	}
+
+	.grid-column-span-3--sm {
+
+		grid-column: span 3;
+
+	}
+
+	.grid-column-span-6--sm {
+
+		grid-column: span 6;
+
+	}
+
+}

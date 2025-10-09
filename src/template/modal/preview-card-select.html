@@ -1,0 +1,104 @@
+			<article class="modal__item modal__item--preview-card-select modal-preview-card-select">
+
+				<div class="modal-preview-card-select__head">
+
+					<picture>
+
+						<source srcset="/img/preview-card/400.webp" type="image/webp">
+						<source srcset="/img/preview-card/400.jpg">
+
+						<source srcset="/img/preview-card/290.webp 1x, /img/preview-card/580.webp 2x" type="image/webp">
+						<source srcset="/img/preview-card/290.jpg 1x, /img/preview-card/580.jpg 2x">
+
+						<img src="/img/preview-card/290.jpg" alt="Academie Ultimate Line Correcting serum (Корректирующая сыворотка от морщин), 30 мл" loading="lazy" width="290" height="290">
+
+					</picture>
+
+				</div>
+
+				<div class="modal-preview-card-select__body">
+
+					<h2 class="h6">
+						Academie Ultimate Line Correcting serum (Корректирующая сыворотка от морщин), 30 мл
+					</h2>
+
+					<p class="modal-preview-card-select__desc">
+						Шампунь для вьющихся волос Moroccanoil - Улучшающий состояние кудрей шампунь насыщен питательным маслом арганы, которое усиливает эластичность и блеск волос, а также делает их более послушными.
+					</p>
+
+					<form action="/" class="modal-preview-card-select__list is-scroll" onChange="console.log(this.elements.sku.value,'прокидываем значение в .preview-card-in-cart или .preview-card-to-cart и разблокируем кнопку')">
+
+{% for i in range (0,12) %}
+
+						<label class="modal-preview-card-select__item">
+
+							<input type="radio" name="sku" value="{{ loop.index }}">
+
+							<picture>
+
+								<source srcset="/img/preview-card/40.webp 1x, /img/preview-card/80.webp 2x" type="image/webp">
+								<source srcset="/img/preview-card/40.jpg 1x, /img/preview-card/80.jpg 2x">
+
+								<img src="/img/preview-card/40.jpg" alt="10/0 экстра светлый блонд натуральный" loading="lazy" width="40" height="40">
+
+							</picture>
+
+							<span class="modal-preview-card-select__item-label">
+
+								Арт:65417626 <br>
+								10/0 экстра светлый блонд натуральный
+
+							</span>
+
+						</label>
+
+{% endfor %}
+
+					</form>
+
+				</div>
+
+				<div class="modal-preview-card-select__foot">
+
+					<div class="price">
+
+						<p class="price__value h2">
+							2581 ₽
+						</p>
+
+						<s class="price__old">
+							2581 ₽
+						</s>
+
+					</div>
+
+{% include "_include/preview-card/authorization.html" %}
+
+					<div class="modal-preview-card-select__forms">
+
+						<form action="/" class="preview-card-to-cart">
+
+							<button class="btn btn--dark" disabled="disabled">
+								В корзину
+								<svg width="24" height="24">
+									<use xlink:href="#svg-cart"/>
+								</svg>
+							</button>
+
+						</form>
+
+						<form action="/" class="preview-card-favorite">
+
+							<button class="btn btn--ico" aria-label="Добавить в избранное">
+								<svg width="24" height="24">
+									<use xlink:href="#svg-heart"/>
+								</svg>
+							</button>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</article>

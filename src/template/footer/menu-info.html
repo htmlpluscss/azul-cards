@@ -1,0 +1,25 @@
+				<div class="footer__menu">
+
+					<p class="h4">
+						Обучение
+					</p>
+
+					<ul>
+
+{% for name in ["Пользовательское соглашение","Возврат, гарантия и оплата","Сотрудничество","Вакансии","Контакты"] %}
+
+						<li>
+
+							<a itemprop="url" href="/">
+								<span itemprop="name">
+									{{ name }}
+								</span>
+							</a>
+
+						</li>
+
+{% endfor %}
+
+					</ul>
+
+				</div>

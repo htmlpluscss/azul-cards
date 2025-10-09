@@ -1,0 +1,35 @@
+			<form action="/" class="modal__item modal__item--review-answer modal-review">
+
+				<div class="modal-review__blockquote">
+
+					<p class="h4">
+						Ответить на отзыв
+					</p>
+
+					<blockquote>
+						Имеется спорная точка зрения, гласящая примерно следующее: многие известные личности, вне зависимости от их уровня, должны быть преданы социально-демократической анафеме. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм.
+					</blockquote>
+
+				</div>
+
+				<div class="modal-review__fieldset">
+
+{% include "_include/form/name.html" %}
+
+{% include "_include/form/email.html" %}
+
+{% include "_include/form/textarea.html" %}
+
+				</div>
+
+				<div class="modal-review__foot">
+
+					<button class="btn btn--dark">
+						Ответить
+					</button>
+
+{% include "_include/form/checkbox-rule.html" %}
+
+				</div>
+
+			</form>
