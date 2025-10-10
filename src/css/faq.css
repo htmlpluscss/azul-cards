@@ -1,4 +1,24 @@
 .faq {
 
+	padding: var(--padding) 0;
+
+	&__header {
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10px;
+
+	}
+
+	&__text {
+
+		font-family: Helvetica Neue;
+		font-size: 18px;
+		line-height: 32px;
+		max-width: 1080px;
+
+	}
+
 
 }

@@ -4,7 +4,7 @@
 	position: relative;
 	color: #fff;
 	background-color: var(--color);
-	padding-top: var(--padding);
+	padding: var(--margin) 0;
 
 	.center {
 
@@ -13,6 +13,70 @@
 			width: 100%;
 
 		}
+
+	}
+
+	&__grid {
+
+		display: grid;
+		align-items: center;
+		grid-template-areas: "logo menu social";
+		grid-template-columns: auto 1fr auto;
+		margin: 10px 0;
+
+	}
+
+
+	&__logo {
+
+		grid-area: logo;
+
+	}
+
+	&__menu {
+
+		grid-area: menu;
+
+		display: flex;
+		justify-content: center;
+		gap: 60px;
+
+		a {
+
+			font-family: Helvetica Neue;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 32px;
+
+		}
+
+	}
+
+	&__social {
+
+		grid-area: social;
+		display: flex;
+		gap: 20px;
+
+		svg {
+
+			background-color: #fff;
+			border-radius: 20px;
+			color: var(--color);
+
+		}
+
+	}
+
+	&__copyright {
+
+		opacity: .54;
+		font-family: Helvetica Neue;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 32px;
+		max-width: 900px;
+		margin: 60px auto 0;
 
 	}
 

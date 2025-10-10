@@ -13,6 +13,7 @@
 @import url(pay-with.css);
 @import url(more-card.css);
 @import url(faq.css);
+@import url(accordion.css);
 
 /*
 @import url(select.css);
@@ -24,7 +25,6 @@
 @import url(tooltip.css);
 @import url(breadcrumbs.css);
 @import url(nouislider.css);
-@import url(accordion.css);
 @import url(pagin.css);
 @import url(search.css);
 

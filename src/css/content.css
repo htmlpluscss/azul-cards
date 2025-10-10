@@ -1,6 +1,6 @@
 /* h */
 
-.h1, .h2, .h3 {
+.h1, .h2, .h3, .h4 {
 
 	font-size: 82px;
 	font-family: 'Helvetica Neue', sans-serif;
@@ -30,6 +30,13 @@
 .h3 {
 
 	font-size: 24px;
+	line-height: 32px;
+
+}
+
+.h4 {
+
+	font-size: 20px;
 	line-height: 32px;
 
 }

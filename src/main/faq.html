@@ -1,41 +1,51 @@
-{% for hash in ["where-buy","how-buy","club","delivery","payment"] %}
+	<article class="faq">
 
-				<div class="page-bar__accordion-item{% if loop.index > 1 %} hide{% endif %}" id="{{ hash }}">
+		<div class="center">
 
-{% for head in ["Оплата заказов","Оплата наличными при самовывозе","Оплата по безналу","Оплата СБП"] %}
+			<header class="faq__header">
 
-					<div class="accordion" itemscope itemtype="https://schema.org/QAPage">
+				<h2 class="faq__title h2">
+					FAQ
+				</h2>
 
-						<div class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<a href="/" class="btn btn--blue">
+					More Questions?
+				</a>
 
-							<meta itemprop="answerCount" content="1">
+			</header>
 
-							<div class="accordion__head accordion__btn">
+			<div class="accordion">
 
-								<h3 class="h5" itemprop="name">
-									{{ head }}
-								</h3>
+{% for i in range(0,5) %}
 
-							</div>
+				<section class="accordion__item">
 
-							<div class="accordion__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="accordion__head">
 
-								<div class="accordion__body-inner" itemprop="text">
+						<h3 class="h3">
+							What is Lorem Ipsum?
+						</h3>
 
-									<p>
-										Обладатели карт Мир, Visa или MasterCard могут  полностью оплатить заказ в момент его оформления. Данный вариант оплаты  позволит сэкономить время при получении посылки. При встрече с курьером, менеджерами пункта самовывоза или почтового отделения вам нужно будет  просто забрать заказ, предварительно предоставив документ,  подтверждающий личность получателя
-									</p>
+					</div>
 
-								</div>
+					<div class="accordion__body">
 
-							</div>
+						<div class="accordion__body-inner faq__text">
+
+							<p>
+								Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							</p>
 
 						</div>
 
 					</div>
 
-{% endfor %}
-
-				</div>
+				</section>
 
 {% endfor %}
+
+			</div>
+
+		</div>
+
+	</article>
