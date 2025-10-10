@@ -1,5 +1,28 @@
 .pay-with {
 
+	&__box {
 
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 60px 0 var(--padding);
+
+	}
+
+	&__content {
+
+		text-align: center;
+		max-width: 466px;
+
+	}
+
+	&__text {
+
+		font-family: 'Helvetica Neue';
+		font-size: 18px;
+		line-height: 32px;
+		margin-top: 24px;
+
+	}
 
 }
