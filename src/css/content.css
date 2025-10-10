@@ -1,16 +1,16 @@
 /* h */
 
-.h1, .h3 {
+.h1, .h2, .h3 {
 
 	font-size: 82px;
 	font-family: 'Helvetica Neue', sans-serif;
 	font-weight: 700;
-	line-height: 92px;
+	line-height: 90px;
 	text-wrap: balance;
 
 }
 
-.h1 {
+.h2 {
 
 	font-size: 40px;
 	line-height: 1.4;
