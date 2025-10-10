@@ -18,7 +18,12 @@
 		line-height: 32px;
 		max-width: 1080px;
 
-	}
+		@media $lgWidth {
 
+			max-width: 712px;
+
+		}
+
+	}
 
 }

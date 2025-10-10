@@ -20,6 +20,20 @@
 
 		grid-area: logo;
 
+		@media $lgWidth {
+
+			width: 148px;
+
+			img {
+
+				width: 123px;
+				height: 20px;
+				object-fit: contain;
+
+			}
+
+		}
+
 	}
 
 	&__menu {
@@ -32,6 +46,12 @@
 			justify-content: center;
 			gap: 80px;
 
+			@media $lgWidth {
+
+				gap: 50px;
+
+			}
+
 		}
 
 		a {
@@ -39,6 +59,12 @@
 			font-weight: 500;
 			font-size: 18px;
 			color: #fff;
+
+			@media $lgWidth {
+
+				font-size: 14px;
+
+			}
 
 		}
 
@@ -49,6 +75,19 @@
 		grid-area: btns;
 		display: flex;
 		gap: 20px;
+
+		@media $lgWidth {
+
+			gap: 10px;
+
+			.btn--light {
+
+				padding-left: 16px;
+				padding-right: 16px;
+
+			}
+
+		}
 
 	}
 

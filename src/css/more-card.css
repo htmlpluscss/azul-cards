@@ -7,7 +7,25 @@
 	&__box {
 
 		display: flex;
+		gap: 30px;
 		justify-content: space-between;
+
+	}
+
+	&__img {
+
+		@media $lgWidth {
+
+			align-self: center;
+
+			img {
+
+				width: 358px;
+				height: auto;
+
+			}
+
+		}
 
 	}
 
@@ -24,6 +42,12 @@
 		align-items: center;
 		margin-bottom: 80px;
 
+		@media $lgWidth {
+
+			margin-bottom: 60px;
+
+		}
+
 		.btn {
 
 			min-width: 168px;
@@ -39,6 +63,14 @@
 		line-height: 32px;
 		margin-top: 10px;
 		max-width: 512px;
+		text-wrap: balance;
+
+		@media $lgWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
 
 	}
 
@@ -48,6 +80,13 @@
 		gap: 60px 20px;
 		max-width: 850px;
 		grid-template-columns: 1fr 1fr 1fr;
+
+		@media $lgWidth {
+
+			gap: 30px 54px;
+			grid-template-columns: 1fr 1fr;
+
+		}
 
 		li {
 

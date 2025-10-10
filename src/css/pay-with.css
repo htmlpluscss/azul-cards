@@ -5,7 +5,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 60px 0 var(--padding);
+		padding: var(--padding) 0;
+		gap: 32px;
+
+		@media $lgWidth {
+
+			img {
+
+				max-width: 310px;
+				height: auto;
+
+			}
+
+		}
 
 	}
 
@@ -22,6 +34,15 @@
 		font-size: 18px;
 		line-height: 32px;
 		margin-top: 24px;
+		text-wrap: balance;
+
+		@media $lgWidth {
+
+			margin-top: 16px;
+			font-size: 16px;
+			line-height: 24px;
+
+		}
 
 	}
 

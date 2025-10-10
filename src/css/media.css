@@ -29,14 +29,10 @@
 
 	:root {
 
-		--indent: 30px;
+		--indent: 40px;
+		--padding: 70px;
 
 	}
-
-
-}
-
-@media $tablet {
 
 }
 
