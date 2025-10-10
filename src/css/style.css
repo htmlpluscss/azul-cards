@@ -3,11 +3,19 @@
 @import url(media.css);
 @import url(default.css);
 @import url(form.css);
-@import url(select.css);
 
 @import url(header.css);
 @import url(footer.css);
 @import url(menu.css);
+
+@import url(simplest-use.css);
+@import url(pay-with.css);
+@import url(more-card.css);
+@import url(faq.css);
+
+/*
+@import url(select.css);
+
 @import url(modal.css);
 @import url(swiper.css);
 @import url(flex.css);
@@ -51,10 +59,5 @@
 @import url(page-bar.css);
 @import url(workshop.css);
 @import url(blog.css);
-@import url(sales.css);
-
-@import url(cart.css);
-@import url(order.css);
-
 @import url(cookie.css);
-@import url(lk.css);
+*/

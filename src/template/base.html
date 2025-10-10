@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: https://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
 
 	<meta charset="utf-8">
 
 	<title>{{ title }}</title>
 
-	<link href="/css/styles.css?{{ timestamp }}" rel="preload" as="style">
-	<link href="/js/scripts.js?{{ timestamp }}" rel="preload" as="script">
+	<link href="/css/styles.css" rel="preload" as="style">
+	<link href="/js/scripts.js" rel="preload" as="script">
 
-	<link rel="preconnect" href="https://mc.yandex.ru/">
-
-	<link href="/fonts/inter-v19-cyrillic_latin-400.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-	<link href="/fonts/inter-v19-cyrillic_latin-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-	<link href="/fonts/montserrat-v30-cyrillic-ext_latin-500.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-	<link href="/fonts/montserrat-v30-cyrillic-ext_latin-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/jost-v20-latin-400.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/jost-v20-latin-500.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 
 	<link href="{{ url }}/favicon.svg" rel="icon" type="image/svg+xml">
 	<link href="{{ url }}/favicon.png" rel="apple-touch-icon">
@@ -22,11 +18,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ description | default(site) }}">
-	<meta name="theme-color" content="#5B6638">
+	<meta name="theme-color" content="#0A2239">
 
-	<link rel="manifest" href="manifest.json">
-
-	<meta property="og:locale" content="ru_RU">
+	<meta property="og:locale" content="en_EN">
 	<meta property="og:site_name" content="{{ site }}">
 	<meta property="og:url" content="{{ url }}{% if urlPage %}/{{ urlPage }}/{% endif %}">
 	<meta property="og:type" content="{{ ogType | default('website') }}">
@@ -35,30 +29,16 @@
 
 	<meta property="og:image" content="{{ url }}/{{ ogImage | default('og.png') }}">
 	<meta property="og:image:secure_url" content="{{ url }}/{{ ogImage | default('og.png') }}">
-{% if ogImage %}
+
 	<meta name="twitter:card" content="summary_large_image">
-{% else %}
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 	<meta property="og:image" content="{{ url }}/{{ ogImage256 | default('og-256.png') }}">
 	<meta property="og:image:width" content="256">
 	<meta property="og:image:height" content="256">
-{% endif %}
 
-	<link href="/css/styles.css?{{ timestamp }}" rel="stylesheet">
-	<script defer src="/js/scripts.js?{{ timestamp }}"></script>
-
-{% for item in preloadImage %}
-	<link href="{{ item.img }}" rel="preload" as="image" media="{{ item.media }}">
-{% endfor %}
-
-	<script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('/service-worker.js')
-			});
-		}
-	</script>
+	<link href="/css/styles.css" rel="stylesheet">
+	<script defer src="/js/scripts.js"></script>
 
 </head>
 
@@ -70,12 +50,6 @@
 
 	<main class="main">
 
-{% if breadcrumbs %}
-
-{% include "template/breadcrumbs.html" %}
-
-{% endif %}
-
 {% block content %}{% endblock %}
 
 	</main>
@@ -83,12 +57,6 @@
 {% include "template/footer.html" %}
 
 </div>
-
-{% include "template/modal.html" %}
-
-{% include "_include/template.html" %}
-
-{% include "template/cookie.html" %}
 
 </body>
 </html>

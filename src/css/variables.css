@@ -1,32 +1,16 @@
 :root {
 
-	--color: #1F222C;
-	--text: #6E7070;
-	--gray: #777e90;
-	--main: #5b6638;
-	--accent: #9fb270;
-	--gray: #B7B7B8;
-	--red: #F40D29;
-	--border: #E8E8E8;
-	--substrate: #f8f8f8;
+	--color: #0A2239;
 
-	--blue: #1026E8;
-	--green: #20C627;
+	--blue: #4162FF;
 
-	--error: #F30000;
 	--bg: #fff;
 
-	--box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.2);
-	--radius: 8px;
-
 	--transitionDefault: 0s;
-	--scrollMargin: 0; /* heightHeader */
-
-	--heightProductScroll: 0; /* product-scroll__inner */
 
 	--indent: 32px;
 	--gap: 24px;
-	--padding: 40px;
+	--padding: 100px;
 	--margin: 40px;
 
 }

@@ -2,25 +2,19 @@
 
 		<div class="center">
 
-{% include "template/footer/btns.html" %}
+			<div class="footer__grid">
 
-			<div class="footer__grid" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+				<p class="footer__logo">
 
-{% include "template/footer/logo.html" %}
+					<a href="/" title="Главная страница {{ site }}">
 
-{% include "template/footer/menu-catalog.html" %}
+						<img src="/img/logo-footer.svg" width="148" height="24" loading="lazy" alt="{{ site }}">
 
-{% include "template/footer/menu-info.html" %}
+					</a>
 
-{% include "template/footer/menu-company.html" %}
-
-{% include "template/footer/contacts.html" %}
+				</p>
 
 			</div>
-
-{% include "template/footer/bottom.html" %}
-
-{% include "template/schema/organization.html" %}
 
 		</div>
 

@@ -1,9 +1,75 @@
 	<header class="header">
 
-{% include "template/header/top.html" %}
+		<div class="center">
 
-{% include "template/header/main.html" %}
+			<div class="header__grid">
 
-{% include "template/menu/catalog.html" %}
+				<p class="header__logo">
+
+					<a href="/" title="Главная страница {{ site }}">
+
+						<img src="/img/logo-header.svg" width="148" height="24" loading="eager" alt="{{ site }}">
+
+					</a>
+
+				</p>
+
+				<nav class="header__menu">
+
+					<ul>
+
+{% for item in [
+	{
+		name : "Company",
+		href : ""
+	},
+	{
+		name : "Referral",
+		href : ""
+	},
+	{
+		name : "Help Center",
+		href : ""
+	},
+	{
+		name : "Contact Us",
+		href : "contact"
+	}
+] %}
+
+						<li>
+
+							<a href="/{{ item.href }}">
+								{{ item.name }}
+							</a>
+
+						</li>
+
+{% endfor %}
+
+					</ul>
+
+				</nav>
+
+				<div class="header__btns">
+
+					<a class="btn btn--light" href="/">
+
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path d="M2.05 13h5.477a17.9 17.9 0 0 0 2.925 8.881A10.005 10.005 0 0 1 2.049 13m0-2a10.005 10.005 0 0 1 8.402-8.88A17.9 17.9 0 0 0 7.527 11zm19.9 0h-5.477a17.9 17.9 0 0 0-2.925-8.88A10.005 10.005 0 0 1 21.95 11m0 2a10.005 10.005 0 0 1-8.402 8.881A17.9 17.9 0 0 0 16.473 13zM9.53 13h4.94A15.9 15.9 0 0 1 12 20.592 15.9 15.9 0 0 1 9.53 13m0-2A15.9 15.9 0 0 1 12 3.409 15.9 15.9 0 0 1 14.47 11z"/>
+						</svg>
+
+						Eng
+					</a>
+
+					<a class="btn btn--white" href="/">
+						Get My Card
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
 
 	</header>

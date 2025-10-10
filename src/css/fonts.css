@@ -1,73 +1,16 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/inter-v19-cyrillic_latin-400.woff2');
+  src: url('/fonts/jost-v20-latin-400.woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 400;
-  src: url('/fonts/inter-v19-cyrillic_latin-400italic.woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/inter-v19-cyrillic_latin-500.woff2');
+  src: url('/fonts/jost-v20-latin-500.woff2');
 }
-
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/fonts/inter-v19-cyrillic_latin-600.woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/inter-v19-cyrillic_latin-700.woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/montserrat-v30-cyrillic-ext_latin-400.woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/fonts/montserrat-v30-cyrillic-ext_latin-500.woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/fonts/montserrat-v30-cyrillic-ext_latin-600.woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/montserrat-v30-cyrillic-ext_latin-700.woff2');
-}
-

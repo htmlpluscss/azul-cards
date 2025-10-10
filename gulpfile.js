@@ -42,8 +42,8 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const timestamp        = Date.now();
-const site             = 'GrandCosmetic.ru';
-const domain           = 'grandcosmetic.htmlpluscss.site';
+const site             = 'asulcards.bank';
+const domain           = 'asulcards.htmlpluscss.site';
 
 try {
 
@@ -91,7 +91,7 @@ const html = (files, since = {}, folder = '') => {
 
 gulp.task('html', () => html('src/**/index.html', {since: gulp.lastRun('html')}));
 gulp.task('html:touch', () => html('src/**/index.html'));
-gulp.task('html:lk', () => html('src/lk/**/index.html', {}, '/lk'));
+gulp.task('html:main', () => html('src/main/**/index.html', {}, '/main'));
 
 gulp.task('css', () => {
 
@@ -130,10 +130,7 @@ gulp.task('js', () => {
 
 		'src/js/min/*.js',
 		'src/js/js.js',
-		'src/js/*.js',
-		'!src/js/min/swiper.min.js',
-		'!src/js/min/inputmask.min.js',
-		'!src/js/min/nouislider.min.js'
+		'src/js/*.js'
 
 	], {since: gulp.lastRun('js')})
 
@@ -154,16 +151,6 @@ gulp.task('js', () => {
 });
 
 gulp.task('serve', () => {
-
-	gulp.src('src/service-worker.js')
-	.pipe(replace('timestamp', timestamp))
-	.pipe(gulp.dest('build'));
-
-	gulp.src([
-		'src/js/min/swiper.min.js',
-		'src/js/min/inputmask.min.js',
-		'src/js/min/nouislider.min.js'
-	]).pipe(gulp.dest('build/js'));
 
 	server.init({
 		server: 'build',
@@ -213,7 +200,7 @@ gulp.task('watch', () => {
 	gulp.watch('src/js/*.*', gulp.series('js'));
 	gulp.watch('src/css/*.*', gulp.series('css'));
 	gulp.watch('src/**/index.html', gulp.series('html'));
-	gulp.watch(['src/lk/**','!src/lk/index.html'], gulp.series('html:lk'));
+	gulp.watch(['src/main/**','!src/main/index.html'], gulp.series('html:main'));
 	gulp.watch(['src/_include/**/*.html','src/template/**/*.html'], gulp.series('html:touch'));
 	gulp.watch(['src/**/*.*', '!src/**/*.{css,html,js}'], gulp.series('copy'));
 	gulp.watch('build/**/*.*', gulp.series('ftp'));
