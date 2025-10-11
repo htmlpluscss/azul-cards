@@ -27,6 +27,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			display: none;
+
+		}
+
 	}
 
 	&__content {
@@ -85,6 +91,14 @@
 
 			gap: 30px 54px;
 			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media $mdWidth {
+
+			gap: 30px;
+			justify-content: space-between;
+			grid-template-columns: 260px 260px;
 
 		}
 

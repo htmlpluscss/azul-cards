@@ -40,9 +40,7 @@
 
 	:root {
 
-		--indent: 16px;
-		--gap: 16px;
-		--space: 72px;
+		--padding: 60px;
 
 	}
 

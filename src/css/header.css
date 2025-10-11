@@ -7,6 +7,17 @@
 	left: 0;
 	right: 0;
 
+	.center {
+
+		@media $mdWidth {
+
+			width: 100%;
+			--indent: 32px;
+
+		}
+
+	}
+
 	&__grid {
 
 		display: grid;
@@ -39,6 +50,12 @@
 	&__menu {
 
 		grid-area: menu;
+
+		@media $mdWidth {
+
+			display: none;
+
+		}
 
 		ul {
 
@@ -92,3 +109,21 @@
 	}
 
 }
+
+
+
+.btn-menu-toggle {
+
+	display: none;
+
+	@media $mdWidth {
+
+		display: flex;
+		height: 48px;
+		width: 48px;
+		padding: 0 !important;
+
+	}
+
+}
+
