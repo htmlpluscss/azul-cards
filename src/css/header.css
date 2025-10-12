@@ -27,9 +27,23 @@
 	&__grid {
 
 		display: grid;
+		gap: 10px;
 		align-items: center;
 		grid-template-areas: "logo menu btns";
 		grid-template-columns: auto 1fr auto;
+
+		@media $mdWidth {
+
+			grid-template-areas: "logo btn-menu btns";
+
+		}
+
+		@media $smWidth {
+
+			grid-template-areas: "logo btn-menu";
+			grid-template-columns: auto 1fr;
+
+		}
 
 	}
 
@@ -75,6 +89,12 @@
 
 			}
 
+			@media $mdWidth {
+
+				display: block;
+
+			}
+
 		}
 
 		a {
@@ -86,6 +106,61 @@
 			@media $lgWidth {
 
 				font-size: 14px;
+
+			}
+
+			@media $mdWidth {
+
+				font-size: 20px;
+				line-height: 32px;
+				display: block;
+				text-align: center;
+				margin: 50px 0;
+
+			}
+
+		}
+
+	}
+
+	&__btn-menu-toggle {
+
+		display: none;
+		grid-area: btn-menu;
+
+		@media $mdWidth {
+
+			display: flex;
+			justify-content: flex-end;
+
+		}
+
+		.btn-menu-toggle {
+
+			display: flex;
+			height: 48px;
+			width: 48px;
+			padding: 0 !important;
+
+			path:first-child {
+
+				opacity: 0;
+
+			}
+
+			.menu-show & {
+
+				path {
+
+					opacity: 0;
+
+					&:first-child {
+
+						opacity: 1;
+
+					}
+
+				}
 
 			}
 
@@ -114,11 +189,9 @@
 
 		@media $smWidth {
 
-			a {
-
-				display: none;
-
-			}
+			display: none;
+			gap: 20px;
+			grid-template-columns: 1fr;
 
 		}
 
@@ -128,18 +201,69 @@
 
 
 
-.btn-menu-toggle {
+.menu-show {
 
-	display: none;
+	background-image: linear-gradient(111deg, #0E33E4 20%, #5DA0FF);
 
-	@media $mdWidth {
+	.header {
 
-		display: flex;
-		height: 48px;
-		width: 48px;
-		padding: 0 !important;
+		position: relative;
+		flex-grow: 1;
+		top: 0;
+		display: grid;
+		padding: var(--margin) 0;
+
+		.center {
+
+			display: grid;
+
+		}
+
+		@media $mdWidth {
+
+			&__grid {
+
+				grid-template-areas: "logo btn-menu btns"
+									 "menu menu menu";
+				grid-template-columns: auto 1fr auto;
+				grid-template-rows: auto 1fr;
+
+			}
+
+			&__menu {
+
+				display: block;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			&__grid {
+
+				grid-template-areas: "logo btn-menu"
+									 "menu menu"
+									 "btns btns";
+				grid-template-columns: auto auto;
+				grid-template-rows: auto 1fr auto;
+
+			}
+
+			&__menu {
+
+				display: block;
+
+			}
+
+			&__btns {
+
+				display: grid;
+
+			}
+
+		}
 
 	}
 
 }
-

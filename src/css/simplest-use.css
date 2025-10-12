@@ -217,6 +217,7 @@
 		@media $smWidth {
 
 			max-width: 353px;
+			width: 100%;
 
 		}
 
@@ -277,6 +278,7 @@
 				width: 205px;
 				left: -43px;
 				bottom: -50px;
+				max-width: 60%;
 
 			}
 

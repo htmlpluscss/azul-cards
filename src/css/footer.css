@@ -141,6 +141,7 @@
 			max-width: 900px;
 			margin: auto;
 			text-align: center;
+			text-wrap: pretty;
 
 			@media $mdWidth {
 
