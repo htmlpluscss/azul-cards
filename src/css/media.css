@@ -66,6 +66,14 @@
 
 @media $smWidth {
 
+	:root {
+
+		--indent: 20px;
+		--margin: 30px;
+		--padding: 40px;
+
+	}
+
 	.hidden-sm {
 
 		display: none !important;

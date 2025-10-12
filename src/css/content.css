@@ -2,16 +2,34 @@
 
 .h1, .h2, .h3, .h4 {
 
-	font-size: 82px;
 	font-family: 'Helvetica Neue', sans-serif;
 	font-weight: 700;
-	line-height: 90px;
 	text-wrap: balance;
+
+}
+
+.h1 {
+
+	font-size: 82px;
+	line-height: 90px;
 
 	@media $lgWidth {
 
 		font-size: 48px;
 		line-height: 1.25;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 44px;
+		line-height: 50px;
+
+	}
+
+	@media $xsWidth {
+
+		font-size: 36px;
 
 	}
 
@@ -31,6 +49,8 @@
 
 	@media $smWidth {
 
+		font-size: 24px;
+		line-height: 32px;
 
 	}
 
@@ -45,6 +65,13 @@
 
 		font-size: 24px;
 		line-height: 32px;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 18px;
+		line-height: 28px;
 
 	}
 

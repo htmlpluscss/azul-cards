@@ -16,6 +16,12 @@
 
 		}
 
+		@media $smWidth {
+
+			--indent: 20px;
+
+		}
+
 	}
 
 	&__grid {
@@ -101,6 +107,16 @@
 
 				padding-left: 16px;
 				padding-right: 16px;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			a {
+
+				display: none;
 
 			}
 

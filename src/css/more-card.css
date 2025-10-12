@@ -10,6 +10,12 @@
 		gap: 30px;
 		justify-content: space-between;
 
+		@media $smWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__img {
@@ -38,6 +44,7 @@
 	&__content {
 
 		width: 867px;
+		max-width: 100%;
 
 	}
 
@@ -54,9 +61,23 @@
 
 		}
 
+		@media $smWidth {
+
+			display: block;
+			text-align: center;
+			margin-bottom: var(--padding);
+
+		}
+
 		.btn {
 
 			min-width: 168px;
+
+			@media $smWidth {
+
+				margin-top: 20px;
+
+			}
 
 		}
 
@@ -75,6 +96,12 @@
 
 			font-size: 16px;
 			line-height: 24px;
+
+		}
+
+		@media $smWidth {
+
+			font-size: 14px;
 
 		}
 
@@ -102,10 +129,25 @@
 
 		}
 
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
 		li {
 
 			display: grid;
 			gap: 10px;
+
+			@media $smWidth {
+
+				text-align: center;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+
+			}
 
 		}
 
@@ -117,12 +159,38 @@
 			font-family: Helvetica Neue;
 			text-wrap: balance;
 
+			@media $smWidth {
+
+				width: 100%;
+
+			}
+
 		}
 
-		svg {
+	}
 
-			border-radius: 20px;
-			background-color: rgba(255, 255, 255, .08);
+	&__ico {
+
+		border-radius: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+		background-color: rgba(255, 255, 255, .08);
+
+		@media $smWidth {
+
+			width: 32px;
+			height: 32px;
+			border-radius: 10px;
+
+			svg {
+
+				width: 40px;
+				height: 40px;
+
+			}
 
 		}
 

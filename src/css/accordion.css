@@ -6,6 +6,12 @@
 
 		padding-bottom: 30px;
 
+		@media $smWidth {
+
+			padding-bottom: 20px;
+
+		}
+
 	}
 
 	&__item:not(.is-open) &__body {
@@ -35,6 +41,19 @@
 		cursor: pointer;
 		user-select: none;
 		padding: 30px 0;
+
+		@media $smWidth {
+
+			padding: 20px 0;
+
+			svg {
+
+				width: 28px;
+				height: 28px;
+
+			}
+
+		}
 
 	}
 
