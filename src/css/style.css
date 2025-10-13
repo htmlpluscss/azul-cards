@@ -15,6 +15,9 @@
 @import url(faq.css);
 @import url(accordion.css);
 
+@import url(your-questions.css);
+@import url(contact-us.css);
+
 /*
 @import url(select.css);
 
@@ -29,7 +32,6 @@
 @import url(search.css);
 
 @import url(billboard.css);
-@import url(form-price-list.css);
 @import url(about-company.css);
 @import url(for-whom.css);
 @import url(preview-card.css);
@@ -57,7 +59,6 @@
 @import url(page-about.css);
 @import url(page-404.css);
 @import url(page-bar.css);
-@import url(workshop.css);
 @import url(blog.css);
 @import url(cookie.css);
 */

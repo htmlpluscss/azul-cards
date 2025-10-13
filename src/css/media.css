@@ -27,6 +27,12 @@
 
 @media $lgWidth {
 
+	.center {
+
+		width: 1280px;
+
+	}
+
 	:root {
 
 		--indent: 40px;
