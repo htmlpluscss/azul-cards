@@ -206,6 +206,17 @@
 
 	background-image: linear-gradient(111deg, #0E33E4 20%, #5DA0FF);
 
+	@media $mdWidth {
+
+		.main,
+		.footer {
+
+			display: none;
+
+		}
+
+	}
+
 	.header {
 
 		position: relative;

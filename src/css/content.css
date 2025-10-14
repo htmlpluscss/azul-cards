@@ -2,7 +2,6 @@
 
 .h1, .h2, .h3, .h4, .h4-v2, .h5 {
 
-	font-family: 'Helvetica Neue', sans-serif;
 	font-weight: 700;
 	text-wrap: balance;
 
@@ -10,7 +9,7 @@
 
 .h1 {
 
-	font-size: 82px;
+	font-size: 80px;
 	line-height: 90px;
 
 	@media $lgWidth {

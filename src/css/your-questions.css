@@ -56,14 +56,14 @@
 
 	&__content {
 
-		width: 640px;
+		width: 680px;
 		color: #fff;
 		padding-bottom: 15px;
 
 		@media $lgWidth {
 
 			padding-bottom: 170px;
-			width: 480px;
+			width: 512px;
 
 		}
 
@@ -105,7 +105,6 @@
 	&__text {
 
 		margin-bottom: 32px;
-		font-family: 'Helvetica Neue';
 		font-weight: 500;
 		font-size: 24px;
 		line-height: 40px;

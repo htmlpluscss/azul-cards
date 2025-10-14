@@ -91,7 +91,7 @@
 
 		@media $smWidth {
 
-			padding-bottom: var(--padding);
+			padding-bottom: 20px;
 
 		}
 
@@ -106,7 +106,6 @@
 	&__text {
 
 		margin-bottom: 56px;
-		font-family: 'Helvetica Neue';
 		font-size: 24px;
 		text-wrap: balance;
 

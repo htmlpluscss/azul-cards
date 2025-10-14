@@ -6,7 +6,6 @@
 
 @import url(header.css);
 @import url(footer.css);
-@import url(menu.css);
 @import url(content.css);
 
 @import url(simplest-use.css);
@@ -20,45 +19,11 @@
 
 /*
 @import url(select.css);
-
 @import url(modal.css);
 @import url(swiper.css);
 @import url(flex.css);
 @import url(tabs.css);
 @import url(tooltip.css);
 @import url(breadcrumbs.css);
-@import url(nouislider.css);
-@import url(pagin.css);
-@import url(search.css);
-
-@import url(billboard.css);
-@import url(about-company.css);
-@import url(for-whom.css);
-@import url(preview-card.css);
-
-@import url(preview-news.css);
-@import url(why-we.css);
-
-@import url(popular-product-lines.css);
-@import url(training-professionals.css);
-@import url(training-programs.css);
-@import url(registration-professionals.css);
-@import url(popular-products.css);
-@import url(products-swiper.css);
-@import url(form-to-work.css);
-@import url(video.css);
-@import url(brands.css);
-
-@import url(catalog.css);
-@import url(filter.css);
-@import url(product.css);
-@import url(readmore-text.css);
-@import url(review.css);
-
-@import url(page-contacts.css);
-@import url(page-about.css);
-@import url(page-404.css);
-@import url(page-bar.css);
-@import url(blog.css);
 @import url(cookie.css);
 */

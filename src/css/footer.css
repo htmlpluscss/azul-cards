@@ -52,8 +52,6 @@
 
 		@media $lgWidth {
 
-			width: 148px;
-
 			img {
 
 				width: 123px;
@@ -96,7 +94,6 @@
 
 		a {
 
-			font-family: Helvetica Neue;
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 32px;
@@ -134,7 +131,6 @@
 		p {
 
 			opacity: .54;
-			font-family: Helvetica Neue;
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 32px;

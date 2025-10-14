@@ -85,7 +85,6 @@
 
 	&__text {
 
-		font-family: 'Helvetica Neue';
 		font-size: 20px;
 		line-height: 32px;
 		margin-top: 10px;
@@ -156,7 +155,6 @@
 			opacity: .68;
 			font-size: 14px;
 			line-height: 24px;
-			font-family: Helvetica Neue;
 			text-wrap: balance;
 
 			@media $smWidth {
