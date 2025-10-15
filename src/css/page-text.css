@@ -1,7 +1,7 @@
 .page-text {
 
 	margin: 185px auto;
-	width: 728px;
+	max-width: 728px;
 	position: static;
 
 	&::before {
@@ -16,9 +16,21 @@
 
 	}
 
+	@media $mdWidth {
+
+		max-width: 100%;
+
+	}
+
 	@media $smWidth {
 
 		margin: 128px auto;
+
+		&::before {
+
+			height: 108px;
+
+		}
 
 	}
 
@@ -29,7 +41,7 @@
 
 		@media $smWidth {
 
-			margin-bottom: 48px;
+			margin: 24px 0;
 
 		}
 

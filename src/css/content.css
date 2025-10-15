@@ -130,3 +130,9 @@
 	}
 
 }
+
+.color-blue {
+
+	color: var(--blue);
+
+}
