@@ -17,13 +17,5 @@
 @import url(your-questions.css);
 @import url(contact-us.css);
 
-/*
-@import url(select.css);
-@import url(modal.css);
-@import url(swiper.css);
-@import url(flex.css);
-@import url(tabs.css);
-@import url(tooltip.css);
-@import url(breadcrumbs.css);
 @import url(cookie.css);
-*/
+@import url(page-text.css);
