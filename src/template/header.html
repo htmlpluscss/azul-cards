@@ -1,4 +1,4 @@
-	<header class="header">
+	<header class="header{% if page === 'text' %} header--white{% endif %}">
 
 		<div class="center">
 
@@ -8,7 +8,7 @@
 
 					<a href="/" title="Главная страница {{ site }}">
 
-						<img src="/img/logo-header.svg" width="148" height="24" loading="eager" alt="{{ site }}">
+{% include "template/logo.html" %}
 
 					</a>
 

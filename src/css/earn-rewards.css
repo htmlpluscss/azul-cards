@@ -1,51 +1,8 @@
-.more-card {
+.earn-rewards {
 
 	padding: var(--padding) 0;
-	background-color: #F5F7FF;
-
-	&__box {
-
-		display: flex;
-		gap: 30px;
-		justify-content: space-between;
-
-		@media $smWidth {
-
-			display: block;
-
-		}
-
-	}
-
-	&__img {
-
-		@media $lgWidth {
-
-			align-self: center;
-
-			img {
-
-				width: 358px;
-				height: auto;
-
-			}
-
-		}
-
-		@media $mdWidth {
-
-			display: none;
-
-		}
-
-	}
-
-	&__content {
-
-		width: 867px;
-		max-width: 100%;
-
-	}
+	color: #fff;
+	background-color: var(--color);
 
 	&__header {
 
@@ -108,9 +65,9 @@
 	&__list {
 
 		display: grid;
-		gap: 60px 20px;
-		max-width: 850px;
-		grid-template-columns: 1fr 1fr 1fr;
+		gap: 40px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		counter-reset: item;
 
 		@media $lgWidth {
 
@@ -137,12 +94,26 @@
 
 			display: grid;
 			gap: 10px;
+			counter-increment: item;
+
+			&::before {
+
+				content: counter(item, decimal-leading-zero);
+				display: block;
+				opacity: 0.16;
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 50px;
+
+
+			}
 
 			@media $smWidth {
 
 				text-align: center;
 				display: flex;
 				flex-wrap: wrap;
+				align-items: center;
 				justify-content: center;
 
 			}
@@ -159,34 +130,6 @@
 			@media $smWidth {
 
 				width: 100%;
-
-			}
-
-		}
-
-	}
-
-	&__ico {
-
-		border-radius: 20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 60px;
-		height: 60px;
-		color: var(--blue);
-		background-color: rgba(65, 98, 255, 0.1);
-
-		@media $smWidth {
-
-			width: 32px;
-			height: 32px;
-			border-radius: 10px;
-
-			svg {
-
-				width: 40px;
-				height: 40px;
 
 			}
 

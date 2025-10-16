@@ -7,6 +7,54 @@
 	left: 0;
 	right: 0;
 
+	&--white {
+
+		top: 0;
+		position: relative;
+		padding: 10px 0;
+		box-shadow: 4px 4px 20px rgba(10, 34, 57, 0.1);
+
+		body:not(.menu-show) & {
+
+			.header__logo #logo-azul {
+
+				fill: var(--blue);
+
+			}
+
+			.header__btns {
+
+				.btn--light {
+
+					color: var(--blue);
+
+				}
+
+				.btn--white {
+
+					background-color: var(--blue);
+					color: #fff;
+
+				}
+
+			}
+
+			.btn-menu-toggle {
+
+				color: var(--blue);
+
+			}
+
+			.header__menu {
+
+				color: var(--color);
+
+			}
+
+		}
+
+	}
+
 	.center {
 
 		@media $mdWidth {
@@ -51,15 +99,26 @@
 
 		grid-area: logo;
 
+		#logo-azul {
+
+			fill: #fff;
+
+		}
+
+		#logo-cards {
+
+			fill: #001A95;
+
+		}
+
 		@media $lgWidth {
 
 			width: 148px;
 
-			img {
+			svg {
 
 				width: 123px;
 				height: 20px;
-				object-fit: contain;
 
 			}
 
@@ -70,6 +129,7 @@
 	&__menu {
 
 		grid-area: menu;
+		color: #fff;
 
 		@media $mdWidth {
 
@@ -101,7 +161,6 @@
 
 			font-weight: 500;
 			font-size: 18px;
-			color: #fff;
 
 			@media $lgWidth {
 
@@ -204,9 +263,9 @@
 
 .menu-show {
 
-	background-image: linear-gradient(111deg, #0E33E4 20%, #5DA0FF);
-
 	@media $mdWidth {
+
+		background-image: linear-gradient(111deg, #0E33E4 20%, #5DA0FF);
 
 		.main,
 		.footer {
@@ -215,23 +274,25 @@
 
 		}
 
-	}
+		.header {
 
-	.header {
-
-		position: relative;
-		flex-grow: 1;
-		top: 0;
-		display: grid;
-		padding: var(--margin) 0;
-
-		.center {
-
+			position: relative;
+			flex-grow: 1;
+			top: 0;
 			display: grid;
+			padding: var(--margin) 0;
 
-		}
+			&--white {
 
-		@media $mdWidth {
+				padding-top: 10px;
+
+			}
+
+			.center {
+
+				display: grid;
+
+			}
 
 			&__grid {
 
@@ -250,7 +311,11 @@
 
 		}
 
-		@media $smWidth {
+	}
+
+	@media $smWidth {
+
+		.header {
 
 			&__grid {
 

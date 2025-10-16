@@ -1,20 +1,7 @@
 .page-text {
 
-	margin: 185px auto;
+	margin: 100px auto;
 	max-width: 728px;
-	position: static;
-
-	&::before {
-
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 128px;
-		content: '';
-		background-color: var(--blue);
-
-	}
 
 	@media $mdWidth {
 
@@ -37,11 +24,9 @@
 	&__title {
 
 		text-align: center;
-		margin-bottom: 64px;
+		margin-bottom: var(--margin);
 
 		@media $smWidth {
-
-			margin: 24px 0;
 
 		}
 
@@ -50,15 +35,19 @@
 	&__date {
 
 		display: block;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 32px;
+		margin-bottom: 30px;
 
 	}
 
 	h2 {
 
-		margin-bottom: 12px;
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 20px;
-		line-height: 28px;
+		line-height: 32px;
+		margin: 40px 4px 10px;
 
 	}
 
@@ -84,7 +73,11 @@
 
 	p, ul {
 
-		margin: var(--gap) 0;
+		b {
+
+			font-weight: 400;
+
+		}
 
 	}
 
@@ -92,17 +85,17 @@
 
 		li {
 
-			padding-left: 32px;
-			margin: var(--gap) 0;
+			padding-left: 24px;
 
 			&::before {
 
 				position: absolute;
-				top: 9px;
-				left: 16px;
+				top: 11px;
+				left: 9px;
 				content: '';
-				width: 4px;
-				height: 4px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
 				background-color: currentColor;
 
 			}

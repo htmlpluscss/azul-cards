@@ -8,7 +8,7 @@
 					FAQ
 				</h2>
 
-				<a href="/" class="btn btn--blue">
+				<a href="/faq/" class="btn btn--blue">
 					More Questions?
 				</a>
 
@@ -16,14 +16,35 @@
 
 			<div class="accordion">
 
-{% for i in range(0,5) %}
+{% for item in [
+	{
+		head : "How does the Azul crypto card work?",
+		text : "Azul Cards make everyday spending with crypto effortless. <br>Create your virtual card in the app or Telegram bot, then add it to Apple Pay or Google Pay in just a few taps. <br>When you fund the card with crypto, it’s instantly converted to traditional currency and ready to use. Shop, dine, or travel — pay as you normally would, anywhere cards are accepted."
+	},
+	{
+		head : "How do I top up my Azul card?",
+		text : "Topping up is simple. <br>Choose your preferred cryptocurrency — like USDT, ETH, or BTC — in the app or Telegram bot, and follow the instructions to send funds from any wallet or exchange. <br>Once the transaction is confirmed, your Azul Card balance updates instantly and you can start spending right away."
+	},
+	{
+		head : "Can I add my Azul Card to Apple Pay or Google Pay?",
+		text : "Absolutely. <br>You can link your Azul Card to Apple Pay or Google Pay in just a few steps. <br>For a detailed guide, check out our Help Center."
+	},
+	{
+		head : "How quickly can I start using my card?",
+		text : "Almost immediately. <br> It takes just a few minutes to issue your card — no paperwork, no waiting. <br> Once activated, add it to Apple Pay or Google Pay and you’re ready to make your first purchase."
+	},
+	{
+		head : "What if I have a problem with my card?",
+		text : "No worries — our support team is available 24/7. <br> If something isn’t working as expected, simply contact us through the app or Telegram bot. <br> We’ll respond quickly and help you get back to using your card with confidence."
+	}
+] %}
 
 				<section class="accordion__item">
 
 					<div class="accordion__head">
 
 						<h3 class="h4">
-							What is Lorem Ipsum?
+							{{ item.head }}
 						</h3>
 
 					</div>
@@ -33,7 +54,7 @@
 						<div class="accordion__body-inner faq__text">
 
 							<p>
-								Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								{{ item.text | safe }}
 							</p>
 
 						</div>

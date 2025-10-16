@@ -20,25 +20,26 @@
 
 		display: grid;
 		align-items: center;
-		grid-template-areas: "logo menu social"
-							 "copyright copyright copyright";
-		grid-template-columns: auto 1fr auto;
+		grid-template-areas: "logo menu"
+							 "social social"
+							 "copyright copyright";
+		grid-template-columns: auto auto;
 		margin: 10px 0;
-		gap: 60px;
+		gap: 32px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
-			grid-template-areas: "logo menu"
-								 "social copyright";
+			grid-template-areas: "logo social"
+								 "menu menu"
+								 "copyright copyright";
 			grid-template-columns: auto auto;
-			gap: 50px 30px;
 
 		}
 
 		@media $smWidth {
 
-			display: flex;
-			flex-direction: column;
+			grid-template-areas: "logo" "social" "menu" "copyright";
+			grid-template-columns: auto;
 			gap: 30px;
 			margin: 20px 0;
 
@@ -50,21 +51,10 @@
 
 		grid-area: logo;
 
-		@media $lgWidth {
-
-			img {
-
-				width: 123px;
-				height: 20px;
-				object-fit: contain;
-
-			}
-
-		}
-
 		@media $smWidth {
 
-			width: auto;
+			display: flex;
+			justify-content: center;
 
 		}
 
@@ -75,27 +65,39 @@
 		grid-area: menu;
 
 		display: flex;
-		justify-content: center;
-		gap: 60px;
+		justify-content: flex-end;
+		gap: 40px;
+
+		@media $lgWidth {
+
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+		}
 
 		@media $mdWidth {
 
-			justify-content: flex-end;
+			li {
+
+				flex-basis: 1
+
+			}
 
 		}
 
 		@media $smWidth {
 
-			width: 100%;
 			gap: 20px;
-			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 
 		}
 
 		a {
 
 			font-weight: 500;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 32px;
 
 		}
@@ -108,9 +110,15 @@
 		display: flex;
 		gap: 20px;
 
+		@media $lgWidth {
+
+			justify-content: flex-end;
+
+		}
+
 		@media $smWidth {
 
-			margin-top: 20px;
+			justify-content: center;
 
 		}
 
@@ -127,6 +135,7 @@
 	&__copyright {
 
 		grid-area: copyright;
+		padding-top: 30px;
 
 		p {
 
@@ -134,23 +143,28 @@
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 32px;
-			max-width: 900px;
+			max-width: 960px;
 			margin: auto;
 			text-align: center;
 			text-wrap: pretty;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
-				text-align: right;
 				font-size: 16px;
 				line-height: 24px;
 
 			}
 
+			@media $mdWidth {
+
+				font-size: 14px;
+
+			}
+
 			@media $smWidth {
 
-				text-align: center;
-				font-size: 14px;
+				font-size: 12px;
+				line-height: 22px;
 
 			}
 

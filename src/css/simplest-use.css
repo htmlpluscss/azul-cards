@@ -2,7 +2,7 @@
 
 	position: relative;
 	padding: 138px 0;
-	margin-bottom: -40px;
+	margin-bottom: -27px;
 	overflow: hidden;
 
 	@media $lgWidth {
@@ -99,7 +99,7 @@
 
 	&__title {
 
-		margin: 24px 0 10px;
+		margin-bottom: 10px;
 
 	}
 
@@ -196,7 +196,7 @@
 	&__img {
 
 		position: relative;
-		padding-bottom: 45px;
+		padding-bottom: 32px;
 		width: 557px;
 
 		@media $lgWidth {
@@ -249,7 +249,7 @@
 
 			position: absolute;
 			left: -86px;
-			bottom: -136px;
+			bottom: -150px;
 
 			@media $lgWidth {
 
