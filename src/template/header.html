@@ -1,4 +1,4 @@
-	<header class="header{% if page === 'text' %} header--white{% endif %}">
+	<header class="header{% if headerMod %} header--{{ headerMod }}{% endif %}">
 
 		<div class="center">
 
@@ -33,15 +33,15 @@
 {% for item in [
 	{
 		name : "Company",
-		href : ""
+		href : "about-us"
 	},
 	{
 		name : "Referral",
-		href : ""
+		href : "referral"
 	},
 	{
 		name : "Help Center",
-		href : ""
+		href : "afq"
 	},
 	{
 		name : "Contact Us",

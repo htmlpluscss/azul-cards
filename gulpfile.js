@@ -45,7 +45,7 @@ const timestamp        = Date.now();
 const site             = 'azulcards.io';
 const domain           = 'asulcards.htmlpluscss.site';
 
-const folderWatch      = 'contact-us';
+const folderWatch      = 'about-us';
 
 try {
 

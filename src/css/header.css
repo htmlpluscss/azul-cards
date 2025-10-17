@@ -7,6 +7,20 @@
 	left: 0;
 	right: 0;
 
+	&--transparent {
+
+		body:not(.menu-show) & {
+
+			.header__logo #logo-cards {
+
+				fill: var(--blue);
+
+			}
+
+		}
+
+	}
+
 	&--white {
 
 		top: 0;
