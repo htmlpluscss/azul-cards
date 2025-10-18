@@ -73,20 +73,20 @@ const html = (files, since = {}, folder = '') => {
 			path: 'src/'
 		}))
 		.pipe(replace('	', '  '))
-		// .pipe(w3cjs({
-		// 	url : 'https://validator.w3.org/nu/',
-		// 	verifyMessage: (type, message) => {
+		.pipe(w3cjs({
+			url : 'https://validator.w3.org/nu/',
+		 	verifyMessage: (type, message) => {
 
-		// 		// prevent logging error message
-		// 		if(message.includes('for attribute “src” on element “img”')) return false;
+		 		// prevent logging error message
+		 		if(message.includes('for attribute “src” on element “img”')) return false;
 
-		// 		if(message.includes('iframe')) return false;
+		 		if(message.includes('iframe')) return false;
 
-		// 		// allow message to pass through
-		// 		return true;
-		// 	}
-		// }))
-		// .pipe(w3cjs.reporter())
+		 		// allow message to pass through
+		 		return true;
+		 	}
+		}))
+		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build' + folder))
 
 };
@@ -217,12 +217,14 @@ gulp.task('default', gulp.series(
 	));
 
 
-gulp.task('min', () => {
-
-	return gulp.src( 'build/**/*.html' )
+gulp.task('build', () => {
+	return gulp.src('build/**/*.html')
 		.pipe(replace('"https://' + site, '"https://' + domain))
-		.pipe(replace('css/styles.css', 'css/styles.min.css'))
-		.pipe(replace('js/scripts.js', 'js/scripts.min.js'))
+		.pipe(replace('css/styles.css', 'css/styles.min.css?' + Date.now()))
+		.pipe(replace('js/scripts.js', 'js/scripts.min.js?' + Date.now()))
 		.pipe(gulp.dest('build'))
-
 });
+
+gulp.task('clean-assets', () => del(['build/img', 'build/fonts']));
+
+gulp.task('min', gulp.series('build', 'clean-assets'));
