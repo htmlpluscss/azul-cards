@@ -5,21 +5,42 @@
 	margin-bottom: 122px;
 	color: #fff;
 
+	@media $mdWidth {
+
+		text-align: center;
+		margin-bottom: 32px;
+
+	}
+
+	@media $smWidth {
+
+		margin-bottom: 0;
+		padding-bottom: 120px;
+
+	}
+
 	&__title {
 
 		margin: 110px 0 10px;
 
 		@media $lgWidth {
 
-			margin-top: 96px;
+			margin-top: 82px;
 
 		}
 
 		@media $mdWidth {
 
-			margin-top: 22px;
+			margin-top: 421px;
 
 		}
+
+		@media $smWidth {
+
+			margin-top: 337px;
+
+		}
+
 
 	}
 
@@ -36,6 +57,14 @@
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 24px;
+			max-width: 434px;
+
+		}
+
+		@media $mdWidth {
+
+			margin: auto;
+			max-width: 502px;
 
 		}
 
@@ -57,6 +86,27 @@
 		z-index: -1;
 		background-color: rgba(10, 34, 57, 0.6);
 		clip-path: polygon(0 0, 100% 0, 100% 607px, 0 100%);
+
+		@media $lgWidth {
+
+			height: 600px;
+			clip-path: polygon(0 0, 100% 0, 100% 524px, 0 100%);
+
+		}
+
+		@media $mdWidth {
+
+			height: 846px;
+			clip-path: polygon(0 0, 100% 0, 100% 788px, 0 100%);
+
+		}
+
+		@media $smWidth {
+
+			height: 745px;
+			clip-path: polygon(0 0, 100% 0, 100% 700px, 0 100%);
+
+		}
 
 		img {
 
@@ -88,9 +138,15 @@
 			grid-template-columns: 1fr 1fr 1fr;
 			align-items: flex-start;
 
+			@media $lgWidth {
+
+				grid-template-columns: 1fr;
+
+			}
+
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			grid-template-columns: 1fr;
 
@@ -119,10 +175,9 @@
 
 		}
 
-		@media $mdWidth {
+		@media $smWidth {
 
 			font-size: 14px;
-			max-width: 400px;
 			padding: 20px;
 
 		}
@@ -141,7 +196,7 @@
 		color: var(--blue);
 		margin-bottom: 30px;
 
-		@media $mdWidth {
+		@media $smWidth {
 
 			margin-bottom: 20px;
 
@@ -149,15 +204,47 @@
 
 	}
 
+	&__title {
+
+		@media $lgWidth {
+
+			margin-top: 100px;
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 70px;
+
+		}
+
+		@media $smWidth {
+
+			margin-top: 48px;
+
+		}
+
+	}
+
 	&__text {
 
-		max-width: 820px;
+		max-width: 1024px;
 		text-wrap: balance;
 		margin: 10px 0 var(--margin);
+		font-size: 20px;
+		line-height: 32px;
+
+		@media $lgWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
 
 		@media $mdWidth {
 
 			font-size: 14px;
+			margin-bottom: 40px;
 
 		}
 
