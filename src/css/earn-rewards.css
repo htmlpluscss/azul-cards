@@ -17,11 +17,17 @@
 
 		}
 
+		@media $mdWidth {
+
+			margin-bottom: 40px;
+
+		}
+
 		@media $smWidth {
 
 			display: block;
 			text-align: center;
-			margin-bottom: var(--padding);
+			margin-bottom: 24px;
 
 		}
 
@@ -31,7 +37,7 @@
 
 			@media $smWidth {
 
-				margin-top: 20px;
+				margin-top: 16px;
 
 			}
 
@@ -78,15 +84,21 @@
 
 		@media $mdWidth {
 
-			gap: 30px;
+			gap: 40px;
 			justify-content: space-between;
-			grid-template-columns: 260px 260px;
+
+			.h5 {
+
+				font-size: 20px;
+
+			}
 
 		}
 
 		@media $smWidth {
 
 			grid-template-columns: 1fr;
+			gap: 16px;
 
 		}
 
@@ -103,7 +115,7 @@
 				opacity: 0.16;
 				font-weight: 700;
 				font-size: 50px;
-				line-height: 50px;
+				line-height: 1;
 
 
 			}
@@ -115,6 +127,13 @@
 				flex-wrap: wrap;
 				align-items: center;
 				justify-content: center;
+
+				&::before {
+
+					width: 100%;
+					font-size: 40px;
+
+				}
 
 			}
 
