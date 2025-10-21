@@ -17,7 +17,9 @@
 
 				</p>
 
-				<ul class="footer__menu">
+				<nav class="footer__menu">
+
+					<ul>
 
 {% for item in [
 	{
@@ -26,11 +28,11 @@
 	},
 	{
 		name : "Your Card",
-		href : ""
+		href : "get-card"
 	},
 	{
 		name : "Referral",
-		href : ""
+		href : "referral"
 	},
 	{
 		name : "Help Center",
@@ -53,17 +55,19 @@
 		href : "terms-of-use"
 	}
 ] %}
-					<li>
+						<li>
 
-						<a href="/{{ item.href }}">
-							{{ item.name }}
-						</a>
+							<a href="/{{ item.href }}">
+								{{ item.name }}
+							</a>
 
-					</li>
+						</li>
 
 {% endfor %}
 
-				</ul>
+					</ul>
+
+				</nav>
 
 				<ul class="footer__social">
 {#
@@ -108,7 +112,11 @@
 				<div class="footer__copyright">
 
 					<p>
-						© 2025 Azul Cards. All rights reserved. Azul Cards is a fintech service providing virtual payment solutions powered by licensed banking partners.  Some features, limits, and rewards depend on your region and card tier.
+						© 2025 Azul Cards. All rights reserved.
+					</p>
+
+					<p>
+						Azul Cards is a fintech service providing virtual payment solutions powered by licensed banking partners.  Some features, limits, and rewards depend on your region and card tier.
 					</p>
 
 				</div>

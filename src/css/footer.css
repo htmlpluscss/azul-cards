@@ -3,7 +3,8 @@
 	flex-shrink: 0;
 	position: relative;
 	color: #fff;
-	background-color: var(--color);
+	outline:1px solid red;
+	/*background-color: var(--color);*/
 	padding: var(--margin) 0;
 
 	.center {
@@ -19,13 +20,12 @@
 	&__grid {
 
 		display: grid;
-		align-items: center;
-		grid-template-areas: "logo menu"
-							 "social social"
-							 "copyright copyright";
-		grid-template-columns: auto auto;
+		align-content: flex-start;
+		grid-template-areas: "logo menu social"
+							 "copyright menu social";
+		grid-template-columns: 280px 1fr auto;
 		margin: 10px 0;
-		gap: 32px;
+		gap: 40px 32px;
 
 		@media $lgWidth {
 
@@ -65,14 +65,32 @@
 		grid-area: menu;
 
 		display: flex;
-		justify-content: flex-end;
-		gap: 40px;
+		align-items: flex-start;
+		justify-content: center;
 
+		ul {
+
+			column-count: 3;
+			gap: 40px;
+			margin-bottom: -30px;
+
+		}
+
+		li {
+
+			padding-bottom: 30px;
+			white-space: nowrap;
+
+		}
+
+/* 		justify-content: flex-end;
+gap: 40px;
+ */
 		@media $lgWidth {
 
-			justify-content: space-between;
-			flex-wrap: wrap;
-
+/* 			justify-content: space-between;
+flex-wrap: wrap;
+ */
 		}
 
 		@media $mdWidth {
@@ -135,40 +153,13 @@
 	&__copyright {
 
 		grid-area: copyright;
-		padding-top: 30px;
-
-		p {
-
-			opacity: .54;
-			font-weight: 500;
-			font-size: 18px;
-			line-height: 32px;
-			max-width: 960px;
-			margin: auto;
-			text-align: center;
-			text-wrap: pretty;
-
-			@media $lgWidth {
-
-				font-size: 16px;
-				line-height: 24px;
-
-			}
-
-			@media $mdWidth {
-
-				font-size: 14px;
-
-			}
-
-			@media $smWidth {
-
-				font-size: 12px;
-				line-height: 22px;
-
-			}
-
-		}
+		display: grid;
+		gap: 20px;
+		opacity: .54;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 20px;
+		text-wrap: pretty;
 
 	}
 

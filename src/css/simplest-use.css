@@ -12,7 +12,6 @@
 	}
 
 	&::before {
-display: none;
 
 		position: absolute;
 		top: 0;
@@ -128,67 +127,6 @@ display: none;
 
 			font-size: 14px;
 			line-height: 24px;
-
-		}
-
-	}
-
-	&__apps {
-
-		display: flex;
-		gap: 20px;
-
-		@media $lgWidth {
-
-			gap: 10px;
-
-		}
-
-		@media $mdWidth {
-
-			justify-content: center;
-
-		}
-
-		@media $smWidth {
-
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-
-			li {
-
-				a {
-
-					background: linear-gradient(0deg, rgba(0, 26, 149, 0.5), rgba(0, 26, 149, 0.5)), #FFFFFF;
-					border: 1px solid rgba(255, 255, 255, 0.06);
-					border-radius: 26px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					height: 40px;
-
-				}
-
-				img {
-
-					width: auto;
-					height: auto;
-
-				}
-
-				&:first-child {
-
-					grid-column: span 2;
-
-					a {
-
-						background: var(--blue);
-
-					}
-
-				}
-
-			}
 
 		}
 

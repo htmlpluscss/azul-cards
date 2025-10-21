@@ -1,0 +1,47 @@
+	<article class="header-billboard">
+
+		<div class="center">
+
+			<div class="header-billboard__content">
+
+				<h1 class="header-billboard__title h2">
+					Get Started with <br> Azul Cards
+				</h1>
+
+				<p class="header-billboard__text">
+					{{ description }}
+				</p>
+
+				<div class="header-billboard__apps">
+
+{% include "main/apps.html" %}
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="header-billboard__img">
+
+			<picture>
+
+				<source srcset="/img/header-billboard/get-card/1202x1122.webp" type="image/webp" media="(max-width: 740px)">
+				<source srcset="/img/header-billboard/get-card/1202x1122.png" media="(max-width: 740px)">
+
+				<source srcset="/img/header-billboard/get-card/1488x1382.webp" type="image/webp" media="(max-width: 1000px)">
+				<source srcset="/img/header-billboard/get-card/1488x1382.png" media="(max-width: 1000px)">
+
+				<source srcset="/img/header-billboard/get-card/644x758.webp 1x, /img/header-billboard/get-card/1288x1516.webp 2x" type="image/webp" media="(max-width: 1336px)">
+				<source srcset="/img/header-billboard/get-card/644x758.png 1x, /img/header-billboard/get-card/1288x1516.png 2x" media="(max-width: 1336px)">
+
+				<source srcset="/img/header-billboard/get-card/1512x700.webp 1x, /img/header-billboard/get-card/3024x1400.webp 2x" type="image/webp">
+				<source srcset="/img/header-billboard/get-card/1512x700.png 1x, /img/header-billboard/get-card/3024x1400.png 2x">
+
+				<img src="/img/header-billboard/get-card/1512x700.png" alt="" loading="lazy" width="1512" height="700">
+
+			</picture>
+
+		</div>
+
+	</article>
