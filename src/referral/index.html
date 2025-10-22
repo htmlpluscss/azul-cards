@@ -1,0 +1,21 @@
+{% set title = "Invite. Earn. Grow Together." %}
+
+{% set description = "Join our Referral Program and turn your network into a steady source of income. By sharing your personal referral link, you can earn up to 50% of deposit fees from every user you bring to the platform." %}
+
+{% set headerMod = "transparent" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "referral/header-billboard.html" %}
+
+{% include "referral/list-cards.html" %}
+
+{% include "referral/earn-rewards.html" %}
+
+{% include "referral/table-levels.html" %}
+
+{% include "referral/start-today.html" %}
+
+{% endblock %}

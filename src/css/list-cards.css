@@ -73,6 +73,19 @@
 
 	}
 
+	&__title {
+
+		margin-bottom: var(--margin);
+
+	}
+
+	/* referral */
+
+	&--referral &__list {
+
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	}
 
 	/* get-card */
 

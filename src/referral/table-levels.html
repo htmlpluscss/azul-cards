@@ -1,0 +1,77 @@
+	<article class="table-levels">
+
+		<div class="center">
+
+			<div class="table-levels__header">
+
+				<h2 class="table-levels__title h3">
+					Referral Levels — Grow Your Earnings
+				</h2>
+
+				<p class="table-levels__text">
+					Your level increases automatically as your referred users deposit more. Each step unlocks a higher commission rate, rewarding your growth and engagement.
+				</p>
+
+			</div>
+
+			<div class="table-levels__table">
+
+				<table>
+
+					<thead>
+
+						<tr>
+
+							<th>
+								Level
+							</th>
+
+							<th>
+								Total Referral Deposit Volume (USD)
+							</th>
+
+							<th>
+								Your Commission
+							</th>
+
+						</tr>
+
+					</thead>
+
+					<tbody>
+
+{% for tr in [
+	["Level 1","Up to $1,000","15% of our fees"],
+	["Level 2","$1,001 – $5,000","25%  of our fees"],
+	["Level 3","$5,001 – $20,000","35%  of our fees"],
+	["Level 4","$20,001 – $50,000","45%  of our fees"],
+	["Level 5","Over $50,000","50%  of our fees (max reward)"]
+] %}
+
+						<tr>
+
+							<td>
+								{{ tr[0] }}
+							</td>
+
+							<td>
+								{{ tr[1] }}
+							</td>
+
+							<td>
+								{{ tr[2] }}
+							</td>
+
+						</tr>
+
+{% endfor %}
+
+					</tbody>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</article>

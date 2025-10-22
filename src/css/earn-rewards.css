@@ -68,6 +68,18 @@
 
 	}
 
+	&--referral &__header {
+
+		margin-bottom: 40px;
+
+	}
+
+	&--referral &__list {
+
+		grid-template-columns: 1fr 1fr;
+
+	}
+
 	&__list {
 
 		display: grid;

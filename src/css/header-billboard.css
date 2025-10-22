@@ -23,6 +23,18 @@
 
 	}
 
+	&--referral {
+
+		margin-bottom: 106px;
+
+	}
+
+	&--referral &__content {
+
+		margin-top: 74px;
+
+	}
+
 	&__content {
 
 		max-width: 696px;

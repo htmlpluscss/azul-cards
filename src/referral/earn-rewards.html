@@ -1,0 +1,51 @@
+	<article class="earn-rewards earn-rewards--referral">
+
+		<div class="center">
+
+			<div class="earn-rewards__header">
+
+				<h2 class="earn-rewards__title h3">
+					How It Works
+				</h2>
+
+			</div>
+
+			<ol class="earn-rewards__list">
+
+{% for li in [
+	{
+		name : "Join the Program",
+		text : "Sign up and activate your referral dashboard. You’ll instantly get a unique referral link that tracks every user who joins through you."
+	},
+	{
+		name : "Share Your Link",
+		text : "Promote your link across social media, Telegram groups, blogs, or private chats. Every time someone signs up and makes a deposit, you earn a commission."
+	},
+	{
+		name : "Earn Up to 50% Based on Referral Volume",
+		text : "Your commission rate grows with the total deposit volume of your referred users. There are five earning levels, from a starting 15% all the way up to 50% as your referrals increase their deposits."
+	},
+	{
+		name : "Track and Withdraw Anytime",
+		text : "View all your stats in real time — total deposits, active referrals, and earned rewards. Withdraw instantly to your wallet or account whenever you want — fast, transparent, and secure."
+	}
+] %}
+				<li>
+
+					<p class="h5">
+						{{ li.name }}
+					</p>
+
+					<p>
+						{{ li.text }}
+					</p>
+
+				</li>
+
+{% endfor %}
+
+			</ol>
+
+		</div>
+
+	</article>
