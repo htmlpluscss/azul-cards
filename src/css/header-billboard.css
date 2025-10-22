@@ -27,11 +27,39 @@
 
 		margin-bottom: 106px;
 
+		@media $lgWidth {
+
+			margin-bottom: 66px;
+
+		}
+
 	}
 
 	&--referral &__content {
 
 		margin-top: 74px;
+
+		@media $lgWidth {
+
+			margin-top: 82px;
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 385px;
+
+		}
+
+	}
+
+	&--referral &__text {
+
+		@media $mdWidth {
+
+			max-width: 100%;
+
+		}
 
 	}
 

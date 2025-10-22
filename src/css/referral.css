@@ -2,19 +2,37 @@
 
 	padding: 70px 0;
 	color: #fff;
-	background: linear-gradient(112deg, #0E33E4 20%, #5DA0FF), #0A2239;
-
+	/* background: linear-gradient(112deg, #0E33E4 20%, #5DA0FF), #0A2239; */
+outline:1px solid red;
 	&__box {
 
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
+		@media $lgWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__main {
 
 		flex-grow: 1;
+
+	}
+
+	&__title {
+
+		@media $lgWidth {
+
+			font-size: 40px;
+			line-height: 56px;
+			margin-bottom: 40px;
+
+		}
 
 	}
 
@@ -41,6 +59,14 @@
 
 			padding: 12px 34px;
 			font-size: 20px;
+			line-height: 32px;
+
+		}
+
+		@media $lgWidth {
+
+			display: flex;
+			margin-top: 40px;
 
 		}
 
@@ -52,6 +78,12 @@
 
 	margin: var(--padding) 0;
 
+	@media $lgWidth {
+
+		--padding: 50px;
+
+	}
+
 	&__text {
 
 		font-size: 20px;
@@ -59,19 +91,27 @@
 		margin: 10px 0 var(--margin);
 		max-width: 1024px;
 
+		@media $lgWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+			text-wrap: balance;
+
+		}
+
 	}
 
 	&__table {
 
-		background-color: #F5F7FF;
+		/*background-color: #F5F7FF;*/
 		border-bottom: 1px solid rgba(10, 34, 57, 0.16);
 		border-radius: 20px;
 		padding: 30px;
+		outline:1px solid red;
 
 		table {
 
 			width: 100%;
-			table-layout: fixed;
 
 		}
 
@@ -83,6 +123,25 @@
 			line-height: 32px;
 			opacity: 0.68;
 
+			&:first-child {
+
+				width: 440px;
+
+				@media $lgWidth {
+
+					width: 220px;
+
+				}
+
+			}
+
+			@media $lgWidth {
+
+				font-size: 16px;
+				line-height: 24px;
+
+			}
+
 		}
 
 		td {
@@ -92,6 +151,13 @@
 			line-height: 40px;
 			padding: 41px 0 18px;
 			border-top: 1px solid #0A223914;
+
+			@media $lgWidth {
+
+				font-size: 18px;
+				line-height: 32px;
+
+			}
 
 		}
 

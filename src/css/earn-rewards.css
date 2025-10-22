@@ -68,6 +68,23 @@
 
 	}
 
+	&--referral {
+
+		@media $lgWidth {
+
+			--padding: 40px;
+
+			.h5 {
+
+				font-size: 20px;
+				line-height: 36px;
+
+			}
+
+		}
+
+	}
+
 	&--referral &__header {
 
 		margin-bottom: 40px;

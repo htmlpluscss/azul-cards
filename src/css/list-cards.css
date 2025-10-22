@@ -77,13 +77,46 @@
 
 		margin-bottom: var(--margin);
 
+		@media $lgWidth {
+
+			margin-bottom: 40px;
+
+		}
+
 	}
 
 	/* referral */
 
+	&--referral {
+
+		@media $lgWidth {
+
+			margin-bottom: 50px;
+
+		}
+
+	}
+
 	&--referral &__list {
 
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		@media $lgWidth {
+
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+	}
+
+	&--referral &__item {
+
+		@media $lgWidth {
+
+			font-size: 18px;
+			line-height: 32px;
+
+		}
 
 	}
 
