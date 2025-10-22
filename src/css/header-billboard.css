@@ -33,6 +33,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			margin-bottom: 34px;
+
+		}
+
 	}
 
 	&--referral &__content {

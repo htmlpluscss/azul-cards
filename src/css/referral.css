@@ -34,6 +34,13 @@ outline:1px solid red;
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 32px;
+			line-height: 48px;
+
+		}
+
 	}
 
 	&__text {
@@ -44,6 +51,20 @@ outline:1px solid red;
 		gap: 30px;
 		max-width: 918px;
 		margin-top: 10px;
+
+		@media $mdWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+			gap: 24px;
+
+			br {
+
+				display: none;
+
+			}
+
+		}
 
 		b {
 
@@ -109,6 +130,12 @@ outline:1px solid red;
 		padding: 30px;
 		outline:1px solid red;
 
+		@media $mdWidth {
+
+			padding: 28px 20px;
+
+		}
+
 		table {
 
 			width: 100%;
@@ -122,6 +149,18 @@ outline:1px solid red;
 			font-size: 18px;
 			line-height: 32px;
 			opacity: 0.68;
+			vertical-align: top;
+			text-wrap: balance;
+
+			&:last-child {
+
+				@media $mdWidth {
+
+					width: 28%;
+
+				}
+
+			}
 
 			&:first-child {
 
@@ -130,6 +169,12 @@ outline:1px solid red;
 				@media $lgWidth {
 
 					width: 220px;
+
+				}
+
+				@media $mdWidth {
+
+					width: 180px;
 
 				}
 

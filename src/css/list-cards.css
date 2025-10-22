@@ -22,7 +22,8 @@
 		flex-direction: column;
 		padding: 30px;
 		gap: 10px;
-		background-color: #FBFCFF;
+		outline:1px solid red;
+		/* background-color: #FBFCFF; */
 		border-bottom: 1px solid rgba(10, 34, 57, 0.16);
 		border-radius: 20px;
 
@@ -115,6 +116,22 @@
 
 			font-size: 18px;
 			line-height: 32px;
+
+		}
+
+		@media $mdWidth {
+
+			padding: 30px;
+
+		}
+
+	}
+
+	&--referral &__ico {
+
+		@media $mdWidth {
+
+			margin-bottom: 30px;
 
 		}
 
