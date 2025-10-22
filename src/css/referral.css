@@ -2,8 +2,8 @@
 
 	padding: 70px 0;
 	color: #fff;
-	/* background: linear-gradient(112deg, #0E33E4 20%, #5DA0FF), #0A2239; */
-outline:1px solid red;
+	background: linear-gradient(112deg, #0E33E4 20%, #5DA0FF), #0A2239;
+
 	&__box {
 
 		display: flex;
@@ -22,6 +22,12 @@ outline:1px solid red;
 
 		flex-grow: 1;
 
+		@media $smWidth {
+
+			text-align: center;
+
+		}
+
 	}
 
 	&__title {
@@ -35,6 +41,13 @@ outline:1px solid red;
 		}
 
 		@media $mdWidth {
+
+			font-size: 32px;
+			line-height: 48px;
+
+		}
+
+		@media $smWidth {
 
 			font-size: 32px;
 			line-height: 48px;
@@ -66,6 +79,13 @@ outline:1px solid red;
 
 		}
 
+		@media $smWidth {
+
+			max-width: 320px;
+			margin: 10px auto 0;
+
+		}
+
 		b {
 
 			font-weight: 600;
@@ -91,6 +111,12 @@ outline:1px solid red;
 
 		}
 
+		@media $smWidth {
+
+			justify-content: center;
+
+		}
+
 	}
 
 }
@@ -98,12 +124,6 @@ outline:1px solid red;
 .table-levels {
 
 	margin: var(--padding) 0;
-
-	@media $lgWidth {
-
-		--padding: 50px;
-
-	}
 
 	&__text {
 
@@ -120,19 +140,58 @@ outline:1px solid red;
 
 		}
 
+		@media $smWidth {
+
+			font-size: 14px;
+			margin-bottom: 40px;
+
+		}
+
+	}
+
+	&__title {
+
+		@media $smWidth {
+
+			font-size: 32px;
+			line-height: 1.5;
+
+		}
+
 	}
 
 	&__table {
 
-		/*background-color: #F5F7FF;*/
+		background-color: #F5F7FF;
 		border-bottom: 1px solid rgba(10, 34, 57, 0.16);
 		border-radius: 20px;
 		padding: 30px;
-		outline:1px solid red;
 
 		@media $mdWidth {
 
 			padding: 28px 20px;
+
+		}
+
+		@media $smWidth {
+
+			padding: 20px;
+
+		}
+
+		@media $smWidth {
+
+			thead {
+
+				display: none;
+
+			}
+
+			table, tbody, tr, td {
+
+				display: block;
+
+			}
 
 		}
 
@@ -204,6 +263,38 @@ outline:1px solid red;
 
 			}
 
+			@media $smWidth {
+
+				padding: 20px 0 0;
+				border: 0;
+
+				&:last-child {
+
+					border-bottom: 1px solid #0A223914;
+					padding-bottom: 20px;
+
+				}
+
+				&:first-child {
+
+					font-size: 20px;
+					line-height: 32px;
+
+				}
+
+				&[data-th]::before {
+
+					content: attr(data-th);
+					display: block;
+					font-size: 14px;
+					line-height: 24px;
+					opacity: 0.68;
+					font-weight: 400;
+
+				}
+
+			}
+
 		}
 
 		tr:first-child td {
@@ -211,11 +302,23 @@ outline:1px solid red;
 			border-top: 0;
 			padding-top: 30px;
 
+			@media $smWidth {
+
+				padding: 0 0 20px;
+
+			}
+
 		}
 
 		tr:last-child td {
 
 			padding-bottom: 0;
+
+			@media $smWidth {
+
+				border-bottom: 0 !important;
+
+			}
 
 		}
 

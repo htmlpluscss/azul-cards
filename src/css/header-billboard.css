@@ -39,6 +39,12 @@
 
 		}
 
+		@media $smWidth {
+
+			margin-bottom: 38px;
+
+		}
+
 	}
 
 	&--referral &__content {
@@ -54,6 +60,12 @@
 		@media $mdWidth {
 
 			margin-top: 385px;
+
+		}
+
+		@media $smWidth {
+
+			margin-top: 322px;
 
 		}
 

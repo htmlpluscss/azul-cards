@@ -22,8 +22,7 @@
 		flex-direction: column;
 		padding: 30px;
 		gap: 10px;
-		outline:1px solid red;
-		/* background-color: #FBFCFF; */
+		background-color: #FBFCFF;
 		border-bottom: 1px solid rgba(10, 34, 57, 0.16);
 		border-radius: 20px;
 
@@ -96,6 +95,12 @@
 
 		}
 
+		@media $smWidth {
+
+			margin-bottom: 20px;
+
+		}
+
 	}
 
 	&--referral &__list {
@@ -105,6 +110,12 @@
 		@media $lgWidth {
 
 			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
 
 		}
 
@@ -125,6 +136,14 @@
 
 		}
 
+		@media $smWidth {
+
+			padding: 20px;
+			font-size: 14px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&--referral &__ico {
@@ -132,6 +151,12 @@
 		@media $mdWidth {
 
 			margin-bottom: 30px;
+
+		}
+
+		@media $smWidth {
+
+			margin-bottom: 20px;
 
 		}
 
