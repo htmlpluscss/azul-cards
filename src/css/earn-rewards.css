@@ -2,8 +2,8 @@
 
 	padding: var(--padding) 0;
 	color: #fff;
-	/* background-color: var(--color); */
-outline:1px solid red;
+	background-color: var(--color);
+
 	&__header {
 
 		display: flex;
