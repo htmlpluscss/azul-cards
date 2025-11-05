@@ -73,20 +73,14 @@ const html = (files, since = {}, folder = '') => {
 			path: 'src/'
 		}))
 		.pipe(replace('	', '  '))
-/*		.pipe(w3cjs({
+		.pipe(w3cjs({
 			url : 'https://validator.w3.org/nu/',
 			verifyMessage: (type, message) => {
-
-				// prevent logging error message
-				if(message.includes('for attribute “src” on element “img”')) return false;
-
 				if(message.includes('iframe')) return false;
-
-				// allow message to pass through
 				return true;
 			}
 		}))
-		.pipe(w3cjs.reporter())*/
+		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build' + folder))
 
 };
