@@ -144,6 +144,19 @@
 
 	}
 
+	&__tg {
+
+		margin-top: 32px;
+
+		@media $mdWidth {
+
+			display: flex;
+			justify-content: center;
+
+		}
+
+	}
+
 	&__apps {
 
 		margin-top: 32px;
