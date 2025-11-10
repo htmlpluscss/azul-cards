@@ -33,6 +33,12 @@
 		width: 94%;
 		text-wrap: pretty;
 
+		p + p {
+
+			margin-top: 10px;
+
+		}
+
 		@media $lgWidth {
 
 			max-width: 712px;
