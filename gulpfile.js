@@ -42,7 +42,7 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const timestamp        = Date.now();
-const site             = 'azulcards.io';
+const site             = 'azul.cards';
 const domain           = 'asulcards.htmlpluscss.site';
 
 const folderWatch      = 'about-us';
